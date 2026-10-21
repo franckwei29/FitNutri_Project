@@ -1,0 +1,83 @@
+{
+  "foodMetadata": [
+    {
+      "metadata_revision": "ux-food-r1",
+      "active_count": 52
+    }
+  ],
+  "options": [
+    {
+      "revision": "ux-exercise-r1",
+      "active_count": 38
+    }
+  ],
+  "movements": [
+    {
+      "revision": "ux-movements-r1",
+      "active_count": 36
+    }
+  ],
+  "capabilities": {
+    "schemaVersion": "mvp-1",
+    "defaultZone": "Australia/Sydney",
+    "catalogueRevision": "eb63c0e2f479427f9387442dedcd8ae63a805d9888dca5954b8e92968a49f956",
+    "catalogues": {
+      "food": {
+        "ready": true,
+        "verified": true,
+        "reason": null
+      },
+      "exercise": {
+        "ready": true,
+        "verified": true,
+        "reason": null
+      }
+    },
+    "features": {
+      "image": {
+        "configured": false,
+        "available": false,
+        "reason": "This AI feature is not configured."
+      },
+      "transcription": {
+        "configured": false,
+        "available": false,
+        "reason": "This AI feature is not configured."
+      },
+      "speechParsing": {
+        "configured": false,
+        "available": false,
+        "reason": "This AI feature is not configured."
+      },
+      "qa": {
+        "configured": false,
+        "available": false,
+        "reason": "This AI feature is not configured."
+      }
+    }
+  },
+  "verifiedSources": [
+    {
+      "content_sha256": "933e5ef6bf362a9f2bc3217097a8116ad45d890d06d9d303b184025e1d04d1bd",
+      "name": "AUSNUT",
+      "record_count": 3741,
+      "release_name": "2023",
+      "revision": "2026-03-details_2025-09-nutrients-r1"
+    },
+    {
+      "content_sha256": "d07969dda1b79ca6ed1fd4cf5661e8a9123641e8c2e1607bc86422efc27ea352",
+      "name": "COMPENDIUM_ADULT",
+      "record_count": 26,
+      "release_name": "2024",
+      "revision": "2025-02-pdf_ux-r2"
+    }
+  ],
+  "preflight": {
+    "status": "PASS",
+    "readOnly": true,
+    "migrationApplied": false,
+    "issues": []
+  },
+  "schemaVersion": 13,
+  "foodAliasCount": 201
+}

@@ -1,0 +1,110 @@
+{
+  "format": "fitnutri.activity.v1",
+  "activities": [
+    {
+      "activityKey": "badminton",
+      "displayName": "Badminton (social, general)",
+      "sourceActivityCode": "15030",
+      "sourceDescription": "Badminton, social singles and doubles, general",
+      "metValue": 5.5
+    },
+    {
+      "activityKey": "brisk-walking",
+      "displayName": "Brisk walking (3.5–3.9 mph)",
+      "sourceActivityCode": "17200",
+      "sourceDescription": "Walking, 3.5 to 3.9 mph, level, brisk, firm surface, walking for exercise",
+      "metValue": 4.8
+    },
+    {
+      "activityKey": "cycling",
+      "displayName": "Cycling (general)",
+      "sourceActivityCode": "01014",
+      "sourceDescription": "Bicycling, general",
+      "metValue": 7.0
+    },
+    {
+      "activityKey": "dancing",
+      "displayName": "Dancing (contemporary, general)",
+      "sourceActivityCode": "03070",
+      "sourceDescription": "Contemporary dancing, general",
+      "metValue": 3.8
+    },
+    {
+      "activityKey": "elliptical",
+      "displayName": "Elliptical (moderate effort)",
+      "sourceActivityCode": "02048",
+      "sourceDescription": "Elliptical trainer, moderate effort",
+      "metValue": 5.0
+    },
+    {
+      "activityKey": "hiit",
+      "displayName": "HIIT (moderate effort)",
+      "sourceActivityCode": "02210",
+      "sourceDescription": "High intensity interval exercise, moderate effort",
+      "metValue": 7.0
+    },
+    {
+      "activityKey": "hiking",
+      "displayName": "Hiking (cross country)",
+      "sourceActivityCode": "17080",
+      "sourceDescription": "Hiking, cross country (Taylor Code 040)",
+      "metValue": 6.0
+    },
+    {
+      "activityKey": "jogging",
+      "displayName": "Jogging (self-selected pace)",
+      "sourceActivityCode": "12020",
+      "sourceDescription": "Jogging, general, self-selected pace",
+      "metValue": 7.5
+    },
+    {
+      "activityKey": "rowing",
+      "displayName": "Rowing (stationary, under 100 watts)",
+      "sourceActivityCode": "02071",
+      "sourceDescription": "Rowing, stationary ergometer, general, <100 watts, moderate effort",
+      "metValue": 5.0
+    },
+    {
+      "activityKey": "running",
+      "displayName": "Running (5.0–5.2 mph)",
+      "sourceActivityCode": "12030",
+      "sourceDescription": "Running, 5.0 to 5.2 mph (12 min/mile)",
+      "metValue": 8.5
+    },
+    {
+      "activityKey": "stair-climbing",
+      "displayName": "Stair climbing (general)",
+      "sourceActivityCode": "17131",
+      "sourceDescription": "Stair climbing, general",
+      "metValue": 6.8
+    },
+    {
+      "activityKey": "strength-training",
+      "displayName": "Strength training (multiple exercises, 8–15 reps)",
+      "sourceActivityCode": "02054",
+      "sourceDescription": "Resistance (weight) training, multiple exercises, 8-15 reps at varied resistance",
+      "metValue": 3.5
+    },
+    {
+      "activityKey": "swimming",
+      "displayName": "Swimming (leisurely, not laps)",
+      "sourceActivityCode": "18310",
+      "sourceDescription": "Swimming, leisurely, not lap swimming, general",
+      "metValue": 6.0
+    },
+    {
+      "activityKey": "walking",
+      "displayName": "Walking (for pleasure)",
+      "sourceActivityCode": "17160",
+      "sourceDescription": "Walking for pleasure (Taylor Code 010)",
+      "metValue": 3.5
+    },
+    {
+      "activityKey": "yoga",
+      "displayName": "Yoga (general)",
+      "sourceActivityCode": "02175",
+      "sourceDescription": "Yoga, General",
+      "metValue": 2.3
+    }
+  ]
+}

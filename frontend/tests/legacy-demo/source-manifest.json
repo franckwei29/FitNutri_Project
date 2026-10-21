@@ -1,0 +1,31 @@
+{
+  "source": "FitNutri_Demo_Source.zip extracted baseline; P00 verifies ZIP equality",
+  "purpose": "Unmodified legacy-only mock behavior tests; never production or real HTTP/DB evidence",
+  "files": [
+    {
+      "path": "src/domain.ts",
+      "bytes": 17524,
+      "sha256": "5066cc75f7d17affc5019d3967c693a4d3f2524502eaad1fcdcaedf5d6c35a1a"
+    },
+    {
+      "path": "src/seed.ts",
+      "bytes": 7506,
+      "sha256": "0f81fd85625e16dceaf1044566b2a8c4f437a98022005885ce3efdaae144e9a6"
+    },
+    {
+      "path": "src/store.ts",
+      "bytes": 13452,
+      "sha256": "b2b838464aefa477dee8d2dd0cd8bdb91fe8fbc745e30eab4a748bf449a4db92"
+    },
+    {
+      "path": "tests/domain.test.ts",
+      "bytes": 7416,
+      "sha256": "32747b8e83e81bef3cf49177b01fa6bf73f95f3e83f7fa9a855d10f740c01953"
+    },
+    {
+      "path": "tests/service.test.ts",
+      "bytes": 5236,
+      "sha256": "82a9a6f411b4862195d346b15884daac97a5bb50ffbfe109cf5513365b6c30cf"
+    }
+  ]
+}

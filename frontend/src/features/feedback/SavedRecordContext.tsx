@@ -1,0 +1,6 @@
+import {CheckCircleOutlined,FormatListBulleted,ArrowForward,Close,Refresh} from '@mui/icons-material'
+import {Alert,Button,IconButton,Tooltip} from '@mui/material'
+import {Link} from 'react-router-dom'
+import {useSaveFeedback} from './SaveFeedbackContext'
+import {saveFeedbackLocation} from './saveFeedbackState'
+export function SavedRecordContext({readFailed,refreshing,onRetry}:{readFailed:boolean;refreshing:boolean;onRetry:()=>void}){const {store,value}=useSaveFeedback();if(!value)return null;return <section className="saved-record-context" aria-label="Latest saved records">{!value.dismissed&&<div className="saved-record-link"><span><CheckCircleOutlined aria-hidden="true" /> Saved for {value.event.recordDate}</span><Button variant="contained" startIcon={<FormatListBulleted />} endIcon={<ArrowForward />} component={Link} to={saveFeedbackLocation(value.event)}>View records</Button><Tooltip title="Close saved notice"><IconButton aria-label="Close saved notice" onClick={()=>store.dismiss(value.event.key)}><Close /></IconButton></Tooltip></div>}{(readFailed||value.refreshFailed)&&<Alert severity="warning">Your records were saved. Some overview data could not be refreshed.<Button startIcon={<Refresh />} disabled={refreshing} onClick={onRetry}>Retry</Button></Alert>}</section>}

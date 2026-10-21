@@ -1,0 +1,658 @@
+{
+  "identity": {
+    "kind": "identity",
+    "schema": "public",
+    "database": "fitnutri_integration_baseline",
+    "serverVersion": "16.15 (Debian 16.15-1.pgdg13+2)"
+  },
+  "columns": {
+    "data": [
+      {
+        "data_type": "bigint",
+        "table_name": "app_user",
+        "column_name": "id",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 1
+      },
+      {
+        "data_type": "timestamp with time zone",
+        "table_name": "app_user",
+        "column_name": "created_at",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 2
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "app_user",
+        "column_name": "display_name",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 3
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "app_user",
+        "column_name": "email",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 4
+      },
+      {
+        "data_type": "boolean",
+        "table_name": "app_user",
+        "column_name": "enabled",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 5
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "app_user",
+        "column_name": "password_hash",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 6
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "app_user",
+        "column_name": "role",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 7
+      },
+      {
+        "data_type": "bigint",
+        "table_name": "exercise_record",
+        "column_name": "id",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 1
+      },
+      {
+        "data_type": "timestamp with time zone",
+        "table_name": "exercise_record",
+        "column_name": "created_at",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 2
+      },
+      {
+        "data_type": "timestamp with time zone",
+        "table_name": "exercise_record",
+        "column_name": "recorded_at",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 3
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "exercise_record",
+        "column_name": "source",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 4
+      },
+      {
+        "data_type": "integer",
+        "table_name": "exercise_record",
+        "column_name": "duration_minutes",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 5
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "exercise_record",
+        "column_name": "estimated_calories",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 6
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "exercise_record",
+        "column_name": "exercise_type",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 7
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "exercise_record",
+        "column_name": "intensity",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 8
+      },
+      {
+        "data_type": "bigint",
+        "table_name": "exercise_record",
+        "column_name": "user_id",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 9
+      },
+      {
+        "data_type": "bigint",
+        "table_name": "food_record",
+        "column_name": "id",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 1
+      },
+      {
+        "data_type": "timestamp with time zone",
+        "table_name": "food_record",
+        "column_name": "created_at",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 2
+      },
+      {
+        "data_type": "timestamp with time zone",
+        "table_name": "food_record",
+        "column_name": "recorded_at",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 3
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "food_record",
+        "column_name": "source",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 4
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_record",
+        "column_name": "calories",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 5
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_record",
+        "column_name": "carbs_grams",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 6
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_record",
+        "column_name": "confidence",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 7
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_record",
+        "column_name": "fat_grams",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 8
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "food_record",
+        "column_name": "food_name",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 9
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "food_record",
+        "column_name": "meal_type",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 10
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_record",
+        "column_name": "protein_grams",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 11
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_record",
+        "column_name": "quantity_grams",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 12
+      },
+      {
+        "data_type": "bigint",
+        "table_name": "food_record",
+        "column_name": "user_id",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 13
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "food_reference",
+        "column_name": "public_food_key",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 1
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_reference",
+        "column_name": "carbsg",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 2
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_reference",
+        "column_name": "energy_kcal",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 3
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_reference",
+        "column_name": "fatg",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 4
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_reference",
+        "column_name": "fiberg",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 5
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "food_reference",
+        "column_name": "food_name",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 6
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_reference",
+        "column_name": "proteing",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 7
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_reference",
+        "column_name": "sodium_mg",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 8
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "food_reference",
+        "column_name": "sugarg",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 9
+      },
+      {
+        "data_type": "bigint",
+        "table_name": "user_profile",
+        "column_name": "user_id",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 1
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "user_profile",
+        "column_name": "activity_level",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 2
+      },
+      {
+        "data_type": "boolean",
+        "table_name": "user_profile",
+        "column_name": "ai_qa_eligible",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 3
+      },
+      {
+        "data_type": "integer",
+        "table_name": "user_profile",
+        "column_name": "birth_year",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 4
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "user_profile",
+        "column_name": "energy_goal_kcal",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 5
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "user_profile",
+        "column_name": "goal",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 6
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "user_profile",
+        "column_name": "health_safety_answer",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 7
+      },
+      {
+        "data_type": "boolean",
+        "table_name": "user_profile",
+        "column_name": "health_safety_consent",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 8
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "user_profile",
+        "column_name": "height_cm",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 9
+      },
+      {
+        "data_type": "boolean",
+        "table_name": "user_profile",
+        "column_name": "onboarding_completed",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 10
+      },
+      {
+        "data_type": "character varying",
+        "table_name": "user_profile",
+        "column_name": "sex",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 11
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "user_profile",
+        "column_name": "weight_kg",
+        "is_nullable": "YES",
+        "column_default": null,
+        "ordinal_position": 12
+      },
+      {
+        "data_type": "bigint",
+        "table_name": "weight_entry",
+        "column_name": "id",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 1
+      },
+      {
+        "data_type": "timestamp with time zone",
+        "table_name": "weight_entry",
+        "column_name": "created_at",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 2
+      },
+      {
+        "data_type": "date",
+        "table_name": "weight_entry",
+        "column_name": "entry_date",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 3
+      },
+      {
+        "data_type": "double precision",
+        "table_name": "weight_entry",
+        "column_name": "weight_kg",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 4
+      },
+      {
+        "data_type": "bigint",
+        "table_name": "weight_entry",
+        "column_name": "user_id",
+        "is_nullable": "NO",
+        "column_default": null,
+        "ordinal_position": 5
+      }
+    ],
+    "kind": "columns"
+  },
+  "constraints": {
+    "data": [
+      {
+        "name": "app_user_pkey",
+        "type": "p",
+        "validated": true,
+        "definition": "PRIMARY KEY (id)",
+        "table_name": "app_user"
+      },
+      {
+        "name": "app_user_role_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (((role)::text = ANY ((ARRAY['USER'::character varying, 'ADMIN'::character varying])::text[])))",
+        "table_name": "app_user"
+      },
+      {
+        "name": "uk1j9d9a06i600gd43uu3km82jw",
+        "type": "u",
+        "validated": true,
+        "definition": "UNIQUE (email)",
+        "table_name": "app_user"
+      },
+      {
+        "name": "exercise_record_intensity_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (((intensity)::text = ANY ((ARRAY['LOW'::character varying, 'MODERATE'::character varying, 'HIGH'::character varying])::text[])))",
+        "table_name": "exercise_record"
+      },
+      {
+        "name": "exercise_record_pkey",
+        "type": "p",
+        "validated": true,
+        "definition": "PRIMARY KEY (id)",
+        "table_name": "exercise_record"
+      },
+      {
+        "name": "exercise_record_source_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (((source)::text = ANY ((ARRAY['MANUAL'::character varying, 'PHOTO'::character varying, 'VOICE'::character varying])::text[])))",
+        "table_name": "exercise_record"
+      },
+      {
+        "name": "fkee1o9hf0x2k2e8nay3941rcj5",
+        "type": "f",
+        "validated": true,
+        "definition": "FOREIGN KEY (user_id) REFERENCES app_user(id)",
+        "table_name": "exercise_record"
+      },
+      {
+        "name": "fk9x0oky874qw3f9suogjtynfhu",
+        "type": "f",
+        "validated": true,
+        "definition": "FOREIGN KEY (user_id) REFERENCES app_user(id)",
+        "table_name": "food_record"
+      },
+      {
+        "name": "food_record_meal_type_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (((meal_type)::text = ANY ((ARRAY['BREAKFAST'::character varying, 'LUNCH'::character varying, 'DINNER'::character varying, 'SNACK'::character varying])::text[])))",
+        "table_name": "food_record"
+      },
+      {
+        "name": "food_record_pkey",
+        "type": "p",
+        "validated": true,
+        "definition": "PRIMARY KEY (id)",
+        "table_name": "food_record"
+      },
+      {
+        "name": "food_record_source_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (((source)::text = ANY ((ARRAY['MANUAL'::character varying, 'PHOTO'::character varying, 'VOICE'::character varying])::text[])))",
+        "table_name": "food_record"
+      },
+      {
+        "name": "food_reference_pkey",
+        "type": "p",
+        "validated": true,
+        "definition": "PRIMARY KEY (public_food_key)",
+        "table_name": "food_reference"
+      },
+      {
+        "name": "fkpdmw33px6fmevqhcy2lpstu4w",
+        "type": "f",
+        "validated": true,
+        "definition": "FOREIGN KEY (user_id) REFERENCES app_user(id)",
+        "table_name": "user_profile"
+      },
+      {
+        "name": "user_profile_activity_level_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (((activity_level)::text = ANY ((ARRAY['SEDENTARY'::character varying, 'LIGHT'::character varying, 'MODERATE'::character varying, 'HIGH'::character varying])::text[])))",
+        "table_name": "user_profile"
+      },
+      {
+        "name": "user_profile_goal_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (((goal)::text = ANY ((ARRAY['LOSE_FAT'::character varying, 'GAIN_MUSCLE'::character varying, 'MAINTAIN'::character varying, 'NOT_SURE'::character varying])::text[])))",
+        "table_name": "user_profile"
+      },
+      {
+        "name": "user_profile_health_safety_answer_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (((health_safety_answer)::text = ANY ((ARRAY['YES'::character varying, 'NO'::character varying, 'NOT_SURE'::character varying, 'PREFER_NOT_TO_SAY'::character varying])::text[])))",
+        "table_name": "user_profile"
+      },
+      {
+        "name": "user_profile_pkey",
+        "type": "p",
+        "validated": true,
+        "definition": "PRIMARY KEY (user_id)",
+        "table_name": "user_profile"
+      },
+      {
+        "name": "user_profile_sex_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (((sex)::text = ANY ((ARRAY['MALE'::character varying, 'FEMALE'::character varying, 'OTHER'::character varying, 'PREFER_NOT_TO_SAY'::character varying])::text[])))",
+        "table_name": "user_profile"
+      },
+      {
+        "name": "fkl2b2v1deglqh4krxux906fd5t",
+        "type": "f",
+        "validated": true,
+        "definition": "FOREIGN KEY (user_id) REFERENCES app_user(id)",
+        "table_name": "weight_entry"
+      },
+      {
+        "name": "weight_entry_pkey",
+        "type": "p",
+        "validated": true,
+        "definition": "PRIMARY KEY (id)",
+        "table_name": "weight_entry"
+      }
+    ],
+    "kind": "constraints"
+  },
+  "indexes": {
+    "data": [
+      {
+        "indexdef": "CREATE UNIQUE INDEX app_user_pkey ON public.app_user USING btree (id)",
+        "indexname": "app_user_pkey",
+        "tablename": "app_user"
+      },
+      {
+        "indexdef": "CREATE UNIQUE INDEX uk1j9d9a06i600gd43uu3km82jw ON public.app_user USING btree (email)",
+        "indexname": "uk1j9d9a06i600gd43uu3km82jw",
+        "tablename": "app_user"
+      },
+      {
+        "indexdef": "CREATE UNIQUE INDEX exercise_record_pkey ON public.exercise_record USING btree (id)",
+        "indexname": "exercise_record_pkey",
+        "tablename": "exercise_record"
+      },
+      {
+        "indexdef": "CREATE UNIQUE INDEX food_record_pkey ON public.food_record USING btree (id)",
+        "indexname": "food_record_pkey",
+        "tablename": "food_record"
+      },
+      {
+        "indexdef": "CREATE UNIQUE INDEX food_reference_pkey ON public.food_reference USING btree (public_food_key)",
+        "indexname": "food_reference_pkey",
+        "tablename": "food_reference"
+      },
+      {
+        "indexdef": "CREATE UNIQUE INDEX user_profile_pkey ON public.user_profile USING btree (user_id)",
+        "indexname": "user_profile_pkey",
+        "tablename": "user_profile"
+      },
+      {
+        "indexdef": "CREATE UNIQUE INDEX weight_entry_pkey ON public.weight_entry USING btree (id)",
+        "indexname": "weight_entry_pkey",
+        "tablename": "weight_entry"
+      }
+    ],
+    "kind": "indexes"
+  },
+  "counts": {
+    "kind": "counts",
+    "app_user": 0,
+    "food_record": 0,
+    "user_profile": 0,
+    "weight_entry": 0,
+    "flywayPresent": false,
+    "food_reference": 1588,
+    "exercise_record": 0
+  },
+  "conflicts": {
+    "kind": "conflicts",
+    "invalidWeights": 0,
+    "invalidDurations": 0,
+    "canonicalEmailGroups": 0,
+    "duplicateWeightDates": 0,
+    "nonfiniteRecordTimes": 0,
+    "invalidFoodQuantities": 0,
+    "foodReferenceForeignKeys": 0
+  }
+}

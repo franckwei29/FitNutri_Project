@@ -1,0 +1,12 @@
+import {test} from 'node:test'
+import assert from 'node:assert/strict'
+import {mkdtempSync,writeFileSync,readFileSync,rmSync} from 'node:fs'
+import {tmpdir} from 'node:os'
+import {join,resolve} from 'node:path'
+import {spawnSync} from 'node:child_process'
+const root=resolve(import.meta.dirname,'../..')
+function fixture(body){const dir=mkdtempSync(join(tmpdir(),'fitnutri check ')),log=join(dir,'calls');for(const name of ['python-check','npm'])writeFileSync(join(dir,name),'#!/bin/sh\nprintf "%s\\n" "'+name+' $*" >> "$PIPELINE_TEST_LOG"\n'+(name==='python-check'?body:'exit 0\n'),{mode:0o700});return{dir,log,env:{...process.env,PATH:dir+':'+process.env.PATH,FITNUTRI_PYTHON:join(dir,'python-check'),PIPELINE_TEST_LOG:log}}}
+test('failed static gate exits nonzero and prevents later commands',{timeout:10000},()=>{const f=fixture('exit 17\n');try{const result=spawnSync('sh',['scripts/check.sh','--stage','static'],{cwd:root,env:f.env,encoding:'utf8'});assert.equal(result.status,17,result.stderr);assert.match(readFileSync(f.log,'utf8'),/validate_contract.py/);assert.doesNotMatch(readFileSync(f.log,'utf8'),/npm|generate_api_types/);assert.doesNotMatch(result.stdout,/gates passed/)}finally{rmSync(f.dir,{recursive:true,force:true})}})
+test('successful static stage invokes contract and no-drift checks before TypeScript and lint',{timeout:10000},()=>{const f=fixture('exit 0\n');try{const result=spawnSync('sh',['scripts/check.sh','--stage','static'],{cwd:root,env:f.env,encoding:'utf8'});assert.equal(result.status,0,result.stderr);const calls=readFileSync(f.log,'utf8');assert.match(calls,/validate_contract.py[\s\S]*generate_api_types.py[\s\S]*typecheck:test[\s\S]*lint/);assert.doesNotMatch(calls,/--write/)}finally{rmSync(f.dir,{recursive:true,force:true})}})
+test('unknown stage is rejected instead of reporting success',()=>{const result=spawnSync('sh',['scripts/check.sh','--stage','imaginary'],{cwd:root,encoding:'utf8'});assert.equal(result.status,2);assert.match(result.stderr,/stage/);assert.doesNotMatch(result.stdout,/gates passed/)})
+test('backend stage refuses missing isolated database configuration before Maven',()=>{const env={...process.env};for(const key of ['TEST_DB_ADMIN_URL','TEST_DB_USERNAME','TEST_DB_PASSWORD','TEST_DB_DOCKER_CONTAINER'])delete env[key];const result=spawnSync('sh',['scripts/check.sh','--stage','backend'],{cwd:root,env,encoding:'utf8'});assert.notEqual(result.status,0);assert.match(result.stderr,/TEST_DB_ADMIN_URL/);assert.doesNotMatch(result.stdout,/BUILD SUCCESS|gates passed/)})

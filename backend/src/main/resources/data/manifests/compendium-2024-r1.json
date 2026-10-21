@@ -1,0 +1,96 @@
+{
+  "format": "fitnutri.activity-manifest.v1",
+  "datasetName": "COMPENDIUM_ADULT",
+  "release": "2024",
+  "revision": "2025-02-pdf_representative-r1",
+  "sourceUrl": "https://pacompendium.com/wp-content/uploads/2025/02/1_2024-adult-compendium_1_2024.pdf",
+  "minAge": 19,
+  "maxAge": 59,
+  "recordsFile": "compendium-2024-activities-r1.json",
+  "recordsSha256": "732e78859dc61d74d6df515267055fe69f6a775dc114288803052edf20f593bd",
+  "expectedCount": 15,
+  "sourceFiles": [
+    {
+      "filename": "2024-adult-compendium.pdf",
+      "url": "https://pacompendium.com/wp-content/uploads/2025/02/1_2024-adult-compendium_1_2024.pdf",
+      "sha256": "ac30234b8f8f813837e282773cfcb3e0fe062334777c2f7b3213429c4fbc251c"
+    },
+    {
+      "filename": "2024-adult-compendium-age-source.html",
+      "url": "https://pacompendium.com/adult-compendium/",
+      "sha256": "6b3c3f397de722904c8d5e0718290393b99842ff8d8a13202312a548cd136697"
+    }
+  ],
+  "mapping": {
+    "code": "Specific Activity Code",
+    "met": "MET Value",
+    "description": "Activity Description",
+    "ageSourceUrl": "https://pacompendium.com/adult-compendium/",
+    "ageEvidence": "ages 19-59",
+    "reviewDate": "2026-10-16",
+    "selectionPolicy": "One explicitly named representative per common activity; preserve conditions/code/MET, no averaging, no old map or Demo coefficients.",
+    "selections": [
+      {
+        "code": "01014",
+        "activityKey": "cycling"
+      },
+      {
+        "code": "02048",
+        "activityKey": "elliptical"
+      },
+      {
+        "code": "02054",
+        "activityKey": "strength-training"
+      },
+      {
+        "code": "02071",
+        "activityKey": "rowing"
+      },
+      {
+        "code": "02175",
+        "activityKey": "yoga"
+      },
+      {
+        "code": "02210",
+        "activityKey": "hiit"
+      },
+      {
+        "code": "03070",
+        "activityKey": "dancing"
+      },
+      {
+        "code": "12020",
+        "activityKey": "jogging"
+      },
+      {
+        "code": "12030",
+        "activityKey": "running"
+      },
+      {
+        "code": "15030",
+        "activityKey": "badminton"
+      },
+      {
+        "code": "17080",
+        "activityKey": "hiking"
+      },
+      {
+        "code": "17131",
+        "activityKey": "stair-climbing"
+      },
+      {
+        "code": "17160",
+        "activityKey": "walking"
+      },
+      {
+        "code": "17200",
+        "activityKey": "brisk-walking"
+      },
+      {
+        "code": "18310",
+        "activityKey": "swimming"
+      }
+    ]
+  },
+  "sourceNote": "Source: 2024 Adult Compendium of Physical Activities, Herrmann et al. 2024. Official pacompendium.com source facts and age page reviewed 2026-10-16. Educational application; no endorsement. Standard population MET estimates, not individual measurements. One representative option per activity; source conditions remain visible; MET values unchanged. No source artwork copied."
+}

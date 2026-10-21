@@ -1,0 +1,11 @@
+# ADR-03 — durable creation receipt in addition to nine business tables
+
+Status: accepted for implementation/testing on develop/yuankang-wei under the user's explicit v2.0 execution request. Independent project-owner/team approval for integration-branch merge and shared rollout remains PENDING. No merge or shared migration is performed here.
+
+The Proposal has nine business tables. v2.0 section4.4 deliberately adds a tenth application table, submission_receipt, to retain whole-food-batch/exercise-create identities across response loss, edits and soft deletion. This is an implementation design increment, not a claim that the original Proposal included a tenth table. Browser memory alone cannot prove a prior committed submission after refresh, and a unique client ID on individual records does not prove an entire batch transaction.
+
+Use UNIQUE(user_id,submission_id), operation and canonical request SHA256, minimal immutable creation proof, createdAt and committedAt. Receipt identity remains occupied after records are corrected/deleted. The database privacy envelope permits only record IDs, stable client IDs, dates and versions at creation. It rejects health-safety answers, prompts, model responses and arbitrary context. No receipt listing is exposed to administrators. No Redis, queues or separate database are introduced.
+
+The user row is the first lock. Pending receipt, records and final proof are one transaction. V4 adds a deferred commit guard so a receipt without final proof cannot become visible; failure rolls back all associated transaction writes. Committed proof cannot be changed or deleted. B08 supplies the canonical hash, same-payload replay and owner-scoped GET service; V4 schema tests alone do not claim those services implemented.
+
+Rollout requires exact schema/dependency preflight, reviewed backup/restore rehearsal and independent data-safety review before a shared database migration. No destructive down migration is offered. Use a forward compatible fix or restore a verified backup to a new database under the owner's rollout decision. Alternatives can be reviewed if an equivalent existing implementation passes all v2.0 idempotency tests; baseline inspection found none.

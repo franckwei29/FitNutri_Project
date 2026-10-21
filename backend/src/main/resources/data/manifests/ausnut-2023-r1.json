@@ -1,0 +1,53 @@
+{
+  "datasetName": "AUSNUT",
+  "expectedCount": 3741,
+  "format": "fitnutri.food-manifest.v1",
+  "mapping": {
+    "basis": "per 100 g edible portion",
+    "detailsDataRow": 5,
+    "detailsHeaderRow": 3,
+    "detailsSheet": "Food details",
+    "displayNameNormalisation": "Trim surrounding whitespace only; officialName retains the original source text.",
+    "joinKeys": [
+      "Public food key",
+      "Survey ID"
+    ],
+    "nutrientColumns": {
+      "carbsG100g": "Available carbohydrate, without sugar alcohols (g)",
+      "energyKj100g": "Energy with dietary fibre (kJ)",
+      "fatG100g": "Total fat (g)",
+      "fiberG100g": "Dietary fibre (g)",
+      "proteinG100g": "Protein (g)",
+      "sodiumMg100g": "Sodium (Na) (mg)",
+      "sugarG100g": "Total sugars (g)"
+    },
+    "nutrientDefinitionsSheet": "TAB A - Nutrients - Foods ",
+    "nutrientsDataRow": 4,
+    "nutrientsHeaderRow": 3,
+    "nutrientsSheet": "Food nutrient profiles"
+  },
+  "nutrientPolicy": "AUSNUT2023_ENERGY_WITH_FIBRE_CARB_EXCL_POLYOLS_CORE4_REQUIRED",
+  "recordsFile": "ausnut-2023-foods-r1.json",
+  "recordsSha256": "933e5ef6bf362a9f2bc3217097a8116ad45d890d06d9d303b184025e1d04d1bd",
+  "release": "2023",
+  "revision": "2026-03-details_2025-09-nutrients-r1",
+  "sourceFiles": [
+    {
+      "filename": "ausnut-2023-food-details.xlsx",
+      "sha256": "e7496d8fe2941ce80740f1731d7cb6e39836bc82d1a18d4007bc027780970293",
+      "url": "https://www.foodstandards.gov.au/sites/default/files/2026-03/AUSNUT-2023-Food-details-4.xlsx"
+    },
+    {
+      "filename": "ausnut-2023-food-nutrient-profiles.xlsx",
+      "sha256": "374650afc59951009d5ddf48fe35f712467458eb07eef513ea9f54c8f110f317",
+      "url": "https://www.foodstandards.gov.au/sites/default/files/2025-09/AUSNUT%202023%20-%20Food%20nutrient%20profiles.xlsx?v=20250903"
+    },
+    {
+      "filename": "ausnut-2023-list-of-nutrients.xlsx",
+      "sha256": "4d9c2547660afc7633ce1c7285612b8ed324d2be782493f9537f50565d564a9c",
+      "url": "https://www.foodstandards.gov.au/sites/default/files/2025-09/AUSNUT%202023%20-%20List%20of%20nutrients.xlsx?v=20250904"
+    }
+  ],
+  "sourceNote": "FSANZ AUSNUT 2023. Exact raw SHA and XLSX headers inspected. Energy includes fibre; available carbohydrate excludes sugar alcohols. Original food-name facts/nutrient values retained; free-form source descriptions and sampling prose are not copied. Attribution: © Food Standards Australia New Zealand. No endorsement is implied. Publisher copyright/licence page: https://www.foodstandards.gov.au/legal-policies/copyright.",
+  "sourceUrl": "https://www.foodstandards.gov.au/sites/default/files/2025-09/AUSNUT%202023%20-%20Food%20nutrient%20profiles.xlsx?v=20250903"
+}

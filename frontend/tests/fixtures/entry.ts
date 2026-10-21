@@ -1,0 +1,7 @@
+import {requireStandaloneFoods as foodRows} from '../../src/features/entry/draftSelectors'
+import type {FoodDraft} from '../../src/features/entry/draftTypes'
+import type {FoodBatchRequest,SubmissionReceipt} from '../../src/api/contracts'
+import {createDraft,createFoodRow} from '../../src/features/entry/draftReducer'
+export function foodDraft(ownerId='1'):FoodDraft{const draft=createDraft(ownerId,'food','2026-10-16','MANUAL') as FoodDraft;draft.entries=[0,1].map(i=>({...createFoodRow(),referenceId:String(10+i),selectedReference:{referenceId:String(10+i),publicFoodKey:'synthetic'+i,displayName:'Synthetic food '+i,active:true,dataset:{id:'1',name:'Synthetic',release:'test',revision:'1',sourceUrl:null,nutrientPolicy:'per100g',verified:true}},quantityGramsInput:'150',mealType:i===0?'LUNCH':'DINNER'}));return draft}
+export function foodPayload(draft:FoodDraft):FoodBatchRequest{return {submissionId:'0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd',recordDate:draft.recordDate,zone:'Australia/Sydney',source:draft.source,items:foodRows(draft).map(r=>({clientEntryId:r.clientEntryId,referenceId:r.referenceId!,quantityGrams:Number(r.quantityGramsInput),mealType:r.mealType as 'LUNCH'|'DINNER'}))}}
+export function receipt(payload:FoodBatchRequest):SubmissionReceipt{return {submissionId:payload.submissionId,kind:'FOOD_BATCH',committedAt:'2026-10-16T01:00:00Z',replayed:false,records:payload.items.map((r,i)=>({id:String(500+i),clientEntryId:r.clientEntryId,recordDate:payload.recordDate,versionAtCreation:0}))}}

@@ -1,0 +1,28 @@
+{
+  "note": "Synthetic cross-language input and independently Python-serialized canonical hash fixture; no official food identity implied.",
+  "format": "fitnutri.submission-hash.v1",
+  "food": {
+    "request": {
+      "submissionId": "0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd",
+      "recordDate": "2026-10-16",
+      "zone": "Australia/Sydney",
+      "source": "MANUAL",
+      "items": [
+        {
+          "clientEntryId": "3d849f70-7c4e-4fdf-abd0-a53c1c807dd9",
+          "referenceId": "9007199254740993",
+          "quantityGrams": 150,
+          "mealType": "LUNCH"
+        },
+        {
+          "clientEntryId": "1845f5ac-2e84-4357-99e4-037559e2880b",
+          "referenceId": "102",
+          "quantityGrams": 0.001,
+          "mealType": "SNACK"
+        }
+      ]
+    },
+    "canonicalJson": "{\"operation\":\"FOOD_BATCH\",\"submissionId\":\"0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd\",\"recordDate\":\"2026-10-16\",\"zone\":\"Australia/Sydney\",\"source\":\"MANUAL\",\"items\":[{\"clientEntryId\":\"1845f5ac-2e84-4357-99e4-037559e2880b\",\"referenceId\":\"102\",\"quantityGrams\":\"0.001\",\"mealType\":\"SNACK\"},{\"clientEntryId\":\"3d849f70-7c4e-4fdf-abd0-a53c1c807dd9\",\"referenceId\":\"9007199254740993\",\"quantityGrams\":\"150\",\"mealType\":\"LUNCH\"}]}",
+    "sha256": "d125b78da32bf22aef2100a7fbebf3491ae73c4c2b192d1accdb606f2d71d55d"
+  }
+}

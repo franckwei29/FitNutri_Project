@@ -1,0 +1,4 @@
+import {ExpandMore} from '@mui/icons-material'
+import {Alert,Button} from '@mui/material'
+interface PageControls {hasNextPage:boolean;isFetchingNextPage:boolean;isFetchNextPageError:boolean;fetchNextPage:()=>Promise<unknown>}
+export function EntryRootPagination({foods,exercises}:{foods:PageControls;exercises:PageControls}){return <div className="stack">{(foods.isFetchNextPageError||exercises.isFetchNextPageError)&&<Alert severity="error">More saved entries could not be loaded. Your loaded entries are unchanged.</Alert>}<div className="actions">{foods.hasNextPage&&<Button startIcon={<ExpandMore />} disabled={foods.isFetchingNextPage} onClick={()=>void foods.fetchNextPage()}>More food</Button>}{exercises.hasNextPage&&<Button startIcon={<ExpandMore />} disabled={exercises.isFetchingNextPage} onClick={()=>void exercises.fetchNextPage()}>More exercise</Button>}</div></div>}

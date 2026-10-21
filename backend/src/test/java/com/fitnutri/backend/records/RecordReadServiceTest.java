@@ -1,0 +1,18 @@
+package com.fitnutri.backend.records;
+import com.fitnutri.backend.common.*;
+import java.time.*;
+import java.math.BigDecimal;
+import java.util.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+class RecordReadServiceTest {
+    private final FoodRecordRepository foods=mock(FoodRecordRepository.class);private final ExerciseRecordRepository exercises=mock(ExerciseRecordRepository.class);
+    private final RecordReadService service=new RecordReadService(foods,exercises,new RecordDatePolicy(Clock.fixed(Instant.parse("2026-10-16T00:00:00Z"),ZoneOffset.UTC),new ZoneResolver("Australia/Sydney")));
+    private FoodRecord food(){var r=new FoodRecord();r.setId(9007199254740993L);r.setClientEntryId(UUID.randomUUID());r.setRecordDate(LocalDate.of(2020,1,2));r.setSource(RecordSource.PHOTO);r.setMealType(MealType.LUNCH);r.setFoodName("Original legacy name");r.setQuantityGramsSnapshot(new BigDecimal("123.123"));r.setEnergyKj(null);r.setProteinGramsSnapshot(new BigDecimal("0.000"));r.setCalories(999.0);return r;}
+    @Test void invalidRangeAndIdentityFailBeforeQueries(){assertThrows(BusinessException.class,()->service.listFoods(1L,LocalDate.of(2020,1,2),LocalDate.of(2020,1,1),null,null));assertThrows(BusinessException.class,()->service.listExercises(1L,LocalDate.of(2018,1,1),LocalDate.of(2020,1,1),null,null));assertThrows(BusinessException.class,()->service.getFood(1L,0L));verifyNoInteractions(foods,exercises);}
+    @Test void historicalSnapshotUsesCanonicalDecimalsAndNullRatherThanLegacyCaloriesOrCurrentReference(){var r=food();when(foods.findOwnedActive(1L,r.getId())).thenReturn(Optional.of(r));var dto=service.getFood(1L,r.getId());assertEquals("9007199254740993",dto.id());assertEquals("IMAGE",dto.source());assertEquals(DataQuality.LEGACY_UNVERIFIED,dto.dataQuality());assertEquals(new BigDecimal("123.123000000000"),dto.quantityGrams());assertNull(dto.nutrients().energyKj());assertEquals(new BigDecimal("0.000"),dto.nutrients().proteinGrams());assertNull(dto.reference());assertEquals(RecordSource.PHOTO,r.getSource());}
+    @Test void absentOrForeignOwnerIsTheSame404AndNoUnscopedIdLookupIsUsed(){assertEquals("NOT_FOUND",assertThrows(BusinessException.class,()->service.getFood(2L,501L)).code());assertEquals("NOT_FOUND",assertThrows(BusinessException.class,()->service.getExercise(2L,501L)).code());verify(foods).findOwnedActive(2L,501L);verify(foods,never()).findById(any());verify(exercises,never()).findById(any());}
+    @Test void validEmptyRangeIsAnEmptyListAndDelegatesExactBusinessDatesAndFilters(){var from=LocalDate.of(2020,1,1);var to=from.plusDays(2);when(foods.findOwnedRange(1L,from,to,MealType.LUNCH)).thenReturn(List.of());assertEquals(List.of(),service.listFoods(1L,from,to,MealType.LUNCH,"UTC"));verify(foods).findOwnedRange(1L,from,to,MealType.LUNCH);}
+    @Test void legacyExercisePreservesUnknownInputsAndItsOriginalEnergySnapshot(){var r=new ExerciseRecord();r.setId(2L);r.setClientEntryId(UUID.randomUUID());r.setRecordDate(LocalDate.of(2020,1,1));r.setExerciseType("Original activity");r.setDurationMinutes(new BigDecimal("30.00"));r.setSource(RecordSource.MANUAL);r.setEstimatedKj(new BigDecimal("516.724"));r.setEstimatedCalories(1.0);when(exercises.findOwnedActive(1L,2L)).thenReturn(Optional.of(r));var dto=service.getExercise(1L,2L);assertEquals(new BigDecimal("516.724"),dto.estimatedKj());assertEquals(EstimateStatus.LEGACY_UNVERIFIED,dto.estimateStatus());assertNull(dto.weightKgUsed());assertNull(dto.metUsed());assertNull(dto.formulaVersion());assertNull(dto.exerciseType());}
+}

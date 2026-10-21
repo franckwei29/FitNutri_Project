@@ -1,0 +1,7 @@
+import {useEffect,useState} from 'react'
+import {useQuery} from '@tanstack/react-query'
+import {fetchExerciseOptionsV2,fetchMovementsV2} from '../api/exerciseEntriesV2'
+import type {ExerciseOptionV2} from '../api/contracts'
+import type {CatalogueScope} from './useFoodSearch'
+/** Current-query data is hidden immediately, including while waiting for the next debounce. */
+export function useExerciseDirectory(query:string,category:ExerciseOptionV2['category']|'',page:number,movementPage:number,scope:CatalogueScope,debounceMs=300,enabled=true,includeMovements=true){const text=query.trim(),[debounced,setDebounced]=useState(text);useEffect(()=>{const timer=setTimeout(()=>setDebounced(text),debounceMs);return ()=>clearTimeout(timer)},[text,debounceMs]);const ready=enabled&&text.length<=80&&text===debounced,options=useQuery({queryKey:['owner',scope.ownerId,scope.epoch,'exercise-options',scope.catalogueRevision,category,text,page],queryFn:({signal})=>fetchExerciseOptionsV2(text,page,signal,category||undefined),enabled:ready,retry:false}),showMovements=includeMovements&&(!category||category==='STRENGTH')&&(!!text||category==='STRENGTH'),movements=useQuery({queryKey:['owner',scope.ownerId,scope.epoch,'exercise-movements',scope.catalogueRevision,category,text,movementPage],queryFn:({signal})=>fetchMovementsV2(text,movementPage,signal),enabled:ready&&showMovements,retry:false});return {options:{...options,data:ready?options.data:undefined},movements:{...movements,data:ready&&showMovements?movements.data:undefined},ready,isDebouncing:enabled&&text!==debounced}}

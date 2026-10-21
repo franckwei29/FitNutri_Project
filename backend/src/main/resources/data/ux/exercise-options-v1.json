@@ -1,0 +1,779 @@
+{
+  "format": "fitnutri.exercise-options.v1",
+  "revision": "ux-exercise-r1",
+  "dataset": {
+    "name": "COMPENDIUM_ADULT",
+    "release": "2024",
+    "revision": "2025-02-pdf_ux-r2",
+    "recordsSha256": "d07969dda1b79ca6ed1fd4cf5661e8a9123641e8c2e1607bc86422efc27ea352"
+  },
+  "entries": [
+    {
+      "optionKey": "treadmill-walk",
+      "displayName": "Treadmill walking",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "treadmill walk",
+        "treadmill walking",
+        "跑步机走路",
+        "跑步机平地走"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "inclinePercent",
+        "distanceMetres"
+      ],
+      "mappingKind": "GENERAL_ACTIVITY_ESTIMATE",
+      "activityKey": "walking",
+      "sourceActivityCode": "17160",
+      "sourceDescription": "Walking for pleasure (Taylor Code 010)",
+      "mappingReason": "General walking-for-pleasure reference used as a broad walking estimate; not a treadmill-specific measured rate or speed/gradient calculation.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "treadmill-brisk-walk",
+      "displayName": "Treadmill brisk walk (5.6–6.3 km/h, level)",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "treadmill brisk walk",
+        "跑步机快走"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "inclinePercent",
+        "distanceMetres"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "treadmill-brisk-walk",
+      "sourceActivityCode": "17358",
+      "sourceDescription": "Walking, treadmill, 3.5 to 3.9 mph (5.6 to 6.3 km/h), 0% grade",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "treadmill-run",
+      "displayName": "Treadmill running",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "treadmill run",
+        "treadmill running",
+        "跑步机跑步"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "inclinePercent",
+        "distanceMetres"
+      ],
+      "mappingKind": "UNAVAILABLE",
+      "activityKey": null,
+      "sourceActivityCode": null,
+      "sourceDescription": null,
+      "mappingReason": "Reviewed running references require stated pace; a generic treadmill run does not establish that condition. Choose a pace-labelled option for a general estimate.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "treadmill-run-5mph",
+      "displayName": "Treadmill run (5–5.2 mph)",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "treadmill run 5 mph",
+        "跑步机跑步5英里"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "inclinePercent",
+        "distanceMetres"
+      ],
+      "mappingKind": "GENERAL_ACTIVITY_ESTIMATE",
+      "activityKey": "running",
+      "sourceActivityCode": "12030",
+      "sourceDescription": "Running, 5.0 to 5.2 mph (12 min/mile)",
+      "mappingReason": "Uses the stated 5.0–5.2 mph running reference as a general treadmill estimate, not device-specific measurement. Optional speed/gradient details do not modify MET.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "treadmill-incline-walk",
+      "displayName": "Treadmill incline walking",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "incline walk",
+        "treadmill incline",
+        "爬坡走",
+        "跑步机爬坡"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "inclinePercent",
+        "distanceMetres"
+      ],
+      "mappingKind": "UNAVAILABLE",
+      "activityKey": null,
+      "sourceActivityCode": null,
+      "sourceDescription": null,
+      "mappingReason": "Reviewed incline walking references depend on pace and grade. Neither is assumed; details remain descriptive and no generic coefficient is invented.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "rowing-machine",
+      "displayName": "Rowing machine (cardio)",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "rowing machine",
+        "rower",
+        "rowing",
+        "划船机",
+        "划船"
+      ],
+      "allowedDetails": [
+        "distanceMetres",
+        "machineLevel"
+      ],
+      "mappingKind": "UNAVAILABLE",
+      "activityKey": null,
+      "sourceActivityCode": null,
+      "sourceDescription": null,
+      "mappingReason": "Existing reviewed rower reference is explicitly under 100 watts and moderate effort; generic rowing does not establish that condition.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "rowing-under100w",
+      "displayName": "Rowing machine (under 100 W, moderate)",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "rowing under 100 watts",
+        "rower moderate",
+        "划船机中等强度100瓦以下"
+      ],
+      "allowedDetails": [
+        "distanceMetres",
+        "machineLevel"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "rowing",
+      "sourceActivityCode": "02071",
+      "sourceDescription": "Rowing, stationary ergometer, general, <100 watts, moderate effort",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "elliptical",
+      "displayName": "Elliptical (moderate effort)",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "elliptical",
+        "cross trainer",
+        "椭圆机"
+      ],
+      "allowedDetails": [
+        "machineLevel",
+        "distanceMetres"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "elliptical",
+      "sourceActivityCode": "02048",
+      "sourceDescription": "Elliptical trainer, moderate effort",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "stair-climber",
+      "displayName": "Rotating stair climber",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "stair climber",
+        "stair treadmill",
+        "stairmill",
+        "楼梯机",
+        "循环台阶爬楼机"
+      ],
+      "allowedDetails": [
+        "machineLevel"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "stair-treadmill",
+      "sourceActivityCode": "02065",
+      "sourceDescription": "Stair treadmill ergometer, general",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "stepper",
+      "displayName": "Stepper machine",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "stepper",
+        "踏步机"
+      ],
+      "allowedDetails": [
+        "machineLevel"
+      ],
+      "mappingKind": "UNAVAILABLE",
+      "activityKey": null,
+      "sourceActivityCode": null,
+      "sourceDescription": null,
+      "mappingReason": "A generic stepper is not assumed equivalent to a stair treadmill or step-aerobics height/pace condition; no reviewed device-specific mapping is activated.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "stationary-bike",
+      "displayName": "Stationary bike",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "stationary bike",
+        "exercise bike",
+        "固定单车",
+        "健身单车"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres",
+        "machineLevel"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "stationary-cycling-general",
+      "sourceActivityCode": "01200",
+      "sourceDescription": "Bicycling, stationary, general",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "recumbent-bike",
+      "displayName": "Recumbent bike",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "recumbent bike",
+        "卧式单车"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres",
+        "machineLevel"
+      ],
+      "mappingKind": "GENERAL_ACTIVITY_ESTIMATE",
+      "activityKey": "stationary-cycling-general",
+      "sourceActivityCode": "01200",
+      "sourceDescription": "Bicycling, stationary, general",
+      "mappingReason": "General stationary cycling is a broad posture-unspecific estimate, not a measured recumbent-specific rate. Machine levels/details do not change the reference.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "spin-bike",
+      "displayName": "Spin bike",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "spin bike",
+        "spinning bike",
+        "动感单车"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres",
+        "machineLevel"
+      ],
+      "mappingKind": "GENERAL_ACTIVITY_ESTIMATE",
+      "activityKey": "stationary-cycling-general",
+      "sourceActivityCode": "01200",
+      "sourceDescription": "Bicycling, stationary, general",
+      "mappingReason": "General stationary cycling used for solo spin-bike recording; no class intensity or watts assumed. A separate reviewed spin-class option is available.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "spin-bike-class",
+      "displayName": "Spin bike class",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "spin class",
+        "spinning class",
+        "动感单车课程"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres",
+        "machineLevel"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "spin-bike-class",
+      "sourceActivityCode": "01270",
+      "sourceDescription": "Bicycling, stationary, RPM/Spin bike class",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "ski-machine",
+      "displayName": "Ski machine (general)",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "ski machine",
+        "滑雪机"
+      ],
+      "allowedDetails": [
+        "distanceMetres",
+        "machineLevel"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "ski-machine",
+      "sourceActivityCode": "02080",
+      "sourceDescription": "Ski machine, general",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "skierg",
+      "displayName": "SkiErg",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "skierg",
+        "ski ergometer",
+        "滑雪测功仪"
+      ],
+      "allowedDetails": [
+        "distanceMetres",
+        "machineLevel"
+      ],
+      "mappingKind": "UNAVAILABLE",
+      "activityKey": null,
+      "sourceActivityCode": null,
+      "sourceDescription": null,
+      "mappingReason": "Reviewed double-poling ergometer reference specifies speed/effort. A generic SkiErg session is not automatically that condition or the separate general ski machine.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "skierg-slow-moderate",
+      "displayName": "SkiErg (slow to moderate double poling)",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "skierg slow moderate",
+        "双杖滑雪机慢至中速"
+      ],
+      "allowedDetails": [
+        "distanceMetres",
+        "machineLevel"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "ski-ergometer-slow-moderate",
+      "sourceActivityCode": "02082",
+      "sourceDescription": "Ski ergometer, cross country, double poling, slow to moderate speed",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "vertical-climber",
+      "displayName": "Vertical climber",
+      "category": "CARDIO",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "vertical climber",
+        "versaclimber",
+        "垂直登山机"
+      ],
+      "allowedDetails": [
+        "machineLevel"
+      ],
+      "mappingKind": "UNAVAILABLE",
+      "activityKey": null,
+      "sourceActivityCode": null,
+      "sourceDescription": null,
+      "mappingReason": "No reviewed vertical-climber mapping in this revision; stair-treadmill, rowing or running coefficients are not transferred to it.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "basketball",
+      "displayName": "Basketball",
+      "category": "SPORTS",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "basketball",
+        "篮球"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "basketball",
+      "sourceActivityCode": "15055",
+      "sourceDescription": "Basketball, general",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "soccer",
+      "displayName": "Soccer (casual)",
+      "category": "SPORTS",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "soccer",
+        "football",
+        "足球"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "soccer-casual",
+      "sourceActivityCode": "15610",
+      "sourceDescription": "Soccer, casual, general (Taylor Code 540)",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "badminton",
+      "displayName": "Badminton (social)",
+      "category": "SPORTS",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "badminton",
+        "羽毛球"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "badminton",
+      "sourceActivityCode": "15030",
+      "sourceDescription": "Badminton, social singles and doubles, general",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "tennis",
+      "displayName": "Tennis (moderate effort)",
+      "category": "SPORTS",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "tennis",
+        "网球"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "tennis-moderate",
+      "sourceActivityCode": "15675",
+      "sourceDescription": "Tennis, general, moderate effort",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "table-tennis",
+      "displayName": "Table tennis",
+      "category": "SPORTS",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "table tennis",
+        "ping pong",
+        "乒乓球"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "table-tennis",
+      "sourceActivityCode": "15660",
+      "sourceDescription": "Table tennis, ping pong (Taylor Code 410)",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "volleyball",
+      "displayName": "Volleyball",
+      "category": "SPORTS",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "volleyball",
+        "排球"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "volleyball",
+      "sourceActivityCode": "15710",
+      "sourceDescription": "Volleyball (Taylor Code 400)",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "walking",
+      "displayName": "Walking",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "walk",
+        "walking",
+        "步行",
+        "走路"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres"
+      ],
+      "mappingKind": "GENERAL_ACTIVITY_ESTIMATE",
+      "activityKey": "walking",
+      "sourceActivityCode": "17160",
+      "sourceDescription": "Walking for pleasure (Taylor Code 010)",
+      "mappingReason": "Walking-for-pleasure reference used as a general walking estimate; no user-specific speed or terrain assumed.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "brisk-walking",
+      "displayName": "Brisk walking (3.5–3.9 mph)",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "brisk walking",
+        "brisk walk",
+        "快走"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "brisk-walking",
+      "sourceActivityCode": "17200",
+      "sourceDescription": "Walking, 3.5 to 3.9 mph, level, brisk, firm surface, walking for exercise",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "jogging",
+      "displayName": "Jogging (self-selected pace)",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "jogging",
+        "jog",
+        "慢跑"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "jogging",
+      "sourceActivityCode": "12020",
+      "sourceDescription": "Jogging, general, self-selected pace",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "running",
+      "displayName": "Running",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "run",
+        "running",
+        "跑步"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres"
+      ],
+      "mappingKind": "UNAVAILABLE",
+      "activityKey": null,
+      "sourceActivityCode": null,
+      "sourceDescription": null,
+      "mappingReason": "Reviewed running entries are pace-specific; general running does not establish 5.0–5.2 mph or another pace. Choose a pace-labelled alternative for an estimate.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "running-5mph",
+      "displayName": "Running (5–5.2 mph)",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "running 5 mph",
+        "跑步5英里"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "running",
+      "sourceActivityCode": "12030",
+      "sourceDescription": "Running, 5.0 to 5.2 mph (12 min/mile)",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "hiking",
+      "displayName": "Hiking (cross country)",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "hiking",
+        "hike",
+        "徒步"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "hiking",
+      "sourceActivityCode": "17080",
+      "sourceDescription": "Hiking, cross country (Taylor Code 040)",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "cycling",
+      "displayName": "Cycling",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "cycling",
+        "bicycling",
+        "骑行",
+        "骑车"
+      ],
+      "allowedDetails": [
+        "speedKmh",
+        "distanceMetres"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "cycling",
+      "sourceActivityCode": "01014",
+      "sourceDescription": "Bicycling, general",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "swimming",
+      "displayName": "Swimming",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "swimming",
+        "swim",
+        "游泳"
+      ],
+      "allowedDetails": [
+        "distanceMetres"
+      ],
+      "mappingKind": "UNAVAILABLE",
+      "activityKey": null,
+      "sourceActivityCode": null,
+      "sourceDescription": null,
+      "mappingReason": "Reviewed swimming reference is leisurely and not lap swimming; a generic swim is not assumed to satisfy those conditions.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "swimming-leisurely",
+      "displayName": "Swimming (leisurely, not laps)",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "leisurely swimming",
+        "休闲游泳"
+      ],
+      "allowedDetails": [
+        "distanceMetres"
+      ],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "swimming",
+      "sourceActivityCode": "18310",
+      "sourceDescription": "Swimming, leisurely, not lap swimming, general",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "yoga",
+      "displayName": "Yoga",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "yoga",
+        "瑜伽"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "yoga",
+      "sourceActivityCode": "02175",
+      "sourceDescription": "Yoga, General",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "dancing",
+      "displayName": "Contemporary dancing",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "dancing",
+        "dance",
+        "跳舞",
+        "现代舞"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "dancing",
+      "sourceActivityCode": "03070",
+      "sourceDescription": "Contemporary dancing, general",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "hiit",
+      "displayName": "HIIT (moderate effort)",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "hiit",
+        "interval training",
+        "间歇训练"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "hiit",
+      "sourceActivityCode": "02210",
+      "sourceDescription": "High intensity interval exercise, moderate effort",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "stair-climbing",
+      "displayName": "Stair climbing",
+      "category": "OUTDOOR_OTHER",
+      "periodKind": "ACTIVITY",
+      "aliases": [
+        "stair climbing",
+        "爬楼梯"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "SPECIFIC_REFERENCE",
+      "activityKey": "stair-climbing",
+      "sourceActivityCode": "17131",
+      "sourceDescription": "Stair climbing, general",
+      "mappingReason": "Exact reviewed activity and stated conditions; standard population estimate, not an individual measurement.",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "optionKey": "strength-general",
+      "displayName": "Strength training",
+      "category": "STRENGTH",
+      "periodKind": "STRENGTH",
+      "aliases": [
+        "strength training",
+        "resistance training",
+        "weight training",
+        "力量训练",
+        "抗阻训练"
+      ],
+      "allowedDetails": [],
+      "mappingKind": "GENERAL_ACTIVITY_ESTIMATE",
+      "activityKey": "strength-training",
+      "sourceActivityCode": "02054",
+      "sourceDescription": "Resistance (weight) training, multiple exercises, 8-15 reps at varied resistance",
+      "mappingReason": "General session estimate from the reviewed multi-exercise resistance-training reference (8–15 repetitions at varied resistance), not a machine/movement-specific MET or a personalised load/sets calculation.",
+      "reviewStatus": "REVIEWED"
+    }
+  ]
+}

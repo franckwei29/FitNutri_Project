@@ -1,0 +1,2 @@
+# UX32-P00 baseline
+Branch Gate PASS: develop/yuankang-wei, HEAD de36589fcb3efe0bea275b7c76f221c41742ddad. No tracked changes; preserve existing untracked metadata/.local and supplied v3.2 spec. Baseline command: npm --prefix frontend test -- tests/component/SaveFeedbackHost.test.tsx tests/component/SavedRecordContext.test.tsx: 2 files, 7 passed, 0 failed/skipped (/tmp/ux32-baseline.log). UAT database is retained; new automated runtime must be independent.

@@ -1,0 +1,9 @@
+import type {ActivityPeriodV2Request,ExerciseEntryPreviewV2Request,ExercisePreviewV2Request} from '../../api/contracts'
+import type {DraftPeriod,ExerciseDraft} from '../entry/draftTypes'
+import {DEFAULT_WORKOUT_TITLE} from '../entry/draftDefaults'
+import {parseQuantity} from '../../domain/inputRules'
+import {DEFAULT_ZONE} from '../../domain/dates'
+function optional(input:string){return input.trim()===''?undefined:Number(input)}
+export function periodInput(period:DraftPeriod):ActivityPeriodV2Request{const minutes=parseQuantity(period.durationMinutesInput,'minutes');if(!minutes.ok||period.selection.kind!=='OPTION'||!period.selection.option)throw new Error('Choose an activity and enter valid minutes.');return {clientEntryId:period.clientEntryId,periodKind:period.periodKind,optionId:period.selection.option.id,durationMinutes:minutes.value,equipmentDetails:Object.fromEntries(Object.entries(period.equipmentDetails).filter(([,value])=>value?.trim()).map(([key,value])=>[key,Number(value)])),movements:period.movements.map(m=>({catalogueId:m.catalogue.id,...(optional(m.setCountInput)!==undefined?{setCount:optional(m.setCountInput)}:{}),...(optional(m.repetitionsInput)!==undefined?{repetitions:optional(m.repetitionsInput)}:{}),...(optional(m.loadKgInput)!==undefined?{loadKg:optional(m.loadKgInput)}:{})}))}}
+export function exerciseEntryInput(draft:ExerciseDraft):ExerciseEntryPreviewV2Request{return draft.entryKind==='QUICK'?{kind:'QUICK',clientEntryId:draft.clientEntryId,period:periodInput(draft.period)}:{kind:'WORKOUT',clientEntryId:draft.clientEntryId,title:draft.titleInput.trim()||DEFAULT_WORKOUT_TITLE,periods:draft.periods.map(periodInput),...(draft.originWorkoutId?{originWorkoutId:draft.originWorkoutId}:{})}}
+export function exercisePreviewInput(draft:ExerciseDraft):ExercisePreviewV2Request{return {recordDate:draft.recordDate,zone:DEFAULT_ZONE,source:draft.source,entry:exerciseEntryInput(draft)}}

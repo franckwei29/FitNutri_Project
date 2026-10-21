@@ -1,0 +1,228 @@
+[
+  {
+    "operationId": "register",
+    "schema": "RegisterRequest",
+    "value": {
+      "email": "fixture@example.test",
+      "password": "Synthetic123",
+      "displayName": "synthetic"
+    }
+  },
+  {
+    "operationId": "login",
+    "schema": "LoginRequest",
+    "value": {
+      "email": "fixture@example.test",
+      "password": "Synthetic123"
+    }
+  },
+  {
+    "operationId": "updateSettings",
+    "schema": "ProfileSettingsRequest",
+    "value": {
+      "expectedUserVersion": 0,
+      "expectedProfileVersion": null,
+      "displayName": "synthetic",
+      "birthYear": 1900,
+      "adultConfirmed": true,
+      "sex": "MALE",
+      "heightCm": 50,
+      "activityLevel": "SEDENTARY",
+      "goalType": null,
+      "dailyTargetKj": null,
+      "energyUnit": "KJ",
+      "healthSafetyAnswer": "NO",
+      "qaConsentGranted": false,
+      "zone": "Australia/Sydney"
+    }
+  },
+  {
+    "operationId": "completeOnboarding",
+    "schema": "OnboardingRequest",
+    "value": {
+      "expectedUserVersion": 0,
+      "expectedProfileVersion": null,
+      "displayName": "synthetic",
+      "birthYear": 1900,
+      "adultConfirmed": true,
+      "sex": "MALE",
+      "heightCm": 50,
+      "activityLevel": "SEDENTARY",
+      "goalType": null,
+      "dailyTargetKj": null,
+      "energyUnit": "KJ",
+      "healthSafetyAnswer": "NO",
+      "qaConsentGranted": false,
+      "zone": "Australia/Sydney",
+      "initialWeight": {
+        "recordDate": "2026-10-16",
+        "weightKg": 20
+      }
+    }
+  },
+  {
+    "operationId": "upsertWeight",
+    "schema": "WeightRequest",
+    "value": {
+      "recordDate": "2026-10-16",
+      "weightKg": 20,
+      "expectedVersion": null,
+      "zone": "Australia/Sydney"
+    }
+  },
+  {
+    "operationId": "createFood",
+    "schema": "FoodSingleRequest",
+    "value": {
+      "submissionId": "0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd",
+      "recordDate": "2026-10-16",
+      "zone": "Australia/Sydney",
+      "source": "MANUAL",
+      "clientEntryId": "0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd",
+      "referenceId": "9007199254740993",
+      "quantityGrams": 1,
+      "mealType": "BREAKFAST"
+    }
+  },
+  {
+    "operationId": "updateFood",
+    "schema": "FoodUpdateRequest",
+    "value": {
+      "expectedVersion": 0,
+      "referenceId": "9007199254740993",
+      "quantityGrams": 1,
+      "mealType": "BREAKFAST",
+      "recordDate": "2026-10-16",
+      "zone": "Australia/Sydney"
+    }
+  },
+  {
+    "operationId": "createExercise",
+    "schema": "ExerciseCreateRequest",
+    "value": {
+      "submissionId": "0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd",
+      "recordDate": "2026-10-16",
+      "zone": "Australia/Sydney",
+      "source": "MANUAL",
+      "exerciseTypeId": "9007199254740993",
+      "durationMinutes": 1,
+      "clientEntryId": "0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd",
+      "calculationFingerprint": "synthetic"
+    }
+  },
+  {
+    "operationId": "updateExercise",
+    "schema": "ExerciseUpdateRequest",
+    "value": {
+      "expectedVersion": 0,
+      "exerciseTypeId": "9007199254740993",
+      "durationMinutes": 1,
+      "recordDate": "2026-10-16",
+      "zone": "Australia/Sydney",
+      "calculationFingerprint": null
+    }
+  },
+  {
+    "operationId": "confirmFoodBatch",
+    "schema": "FoodBatchRequest",
+    "value": {
+      "submissionId": "0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd",
+      "recordDate": "2026-10-16",
+      "zone": "Australia/Sydney",
+      "source": "MANUAL",
+      "items": [
+        {
+          "clientEntryId": "0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd",
+          "referenceId": "9007199254740993",
+          "quantityGrams": 1,
+          "mealType": "BREAKFAST"
+        }
+      ]
+    }
+  },
+  {
+    "operationId": "deactivateUser",
+    "schema": "ChangeStatusRequest",
+    "value": {
+      "expectedVersion": 0
+    }
+  },
+  {
+    "operationId": "reactivateUser",
+    "schema": "ChangeStatusRequest",
+    "value": {
+      "expectedVersion": 0
+    }
+  },
+  {
+    "operationId": "resetPassword",
+    "schema": "ResetPasswordRequest",
+    "value": {
+      "expectedVersion": 0,
+      "newPassword": "Synthetic123"
+    }
+  },
+  {
+    "operationId": "parseSpeech",
+    "schema": "ParseSpeechRequest",
+    "value": {
+      "kind": "FOOD",
+      "transcript": "synthetic",
+      "baseDate": "2026-10-16",
+      "zone": "Australia/Sydney"
+    }
+  },
+  {
+    "operationId": "askQuestion",
+    "schema": "QaRequest",
+    "value": {
+      "message": "synthetic",
+      "recordRange": null,
+      "zone": "Australia/Sydney"
+    }
+  },
+  {
+    "schema": "CalculationChangedResponse",
+    "value": {
+      "status": 409,
+      "code": "CALCULATION_CHANGED",
+      "message": "Review the changed calculation basis before confirming.",
+      "path": "/api/records/exercise",
+      "requestId": "2fe11d5a-8677-4dfb-b090-61d68127c887",
+      "fieldErrors": [],
+      "retryable": false,
+      "currentPreview": {
+        "exerciseType": {
+          "id": "9007199254740993",
+          "activityKey": "synthetic",
+          "displayName": "synthetic",
+          "sourceActivityCode": "99901",
+          "sourceDescription": "Synthetic source fixture only",
+          "metValue": 3.5,
+          "dataset": {
+            "id": "9007199254740993",
+            "name": "synthetic",
+            "release": "synthetic",
+            "revision": "synthetic",
+            "sourceUrl": "https://example.test/synthetic-activity",
+            "nutrientPolicy": "MET_REFERENCE",
+            "verified": true,
+            "minAge": 19,
+            "maxAge": 59
+          },
+          "active": true
+        },
+        "recordDate": "2020-01-02",
+        "durationMinutes": 10,
+        "estimatedKj": 170.847,
+        "estimateStatus": "AVAILABLE",
+        "unavailableReason": null,
+        "weightKgUsed": 70,
+        "weightDateUsed": "2020-01-01",
+        "metUsed": 3.5,
+        "formulaVersion": "MET_KG_MIN_KJ_V1",
+        "calculationFingerprint": "synthetic-reviewed-fingerprint"
+      }
+    }
+  }
+]

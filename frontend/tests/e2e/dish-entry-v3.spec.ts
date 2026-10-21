@@ -1,0 +1,52 @@
+import { test, expect } from '@playwright/test';
+import { newOwner, beginFood, addFood, makeDish, foodReview, confirmFood, foodRoots, history } from './v3-journeys';
+import { inspectOwnedSyntheticData } from './owned-db-verification.mjs';
+test('TUX dish: exact one-third recipe plus independent single saves five leaves as two roots;reuse clears all quantities', async ({ page }) => {
+    const identity = await newOwner(page, 'v3-dish');
+    await beginFood(page);
+    await makeDish(page);
+    await addFood(page);
+    await foodReview(page);
+    expect(inspectOwnedSyntheticData(identity.email).foodRecords).toHaveLength(0);
+    const proof = await confirmFood(page);
+    expect(proof.roots.map(r => r.kind)).toEqual(['DISH', 'SINGLE']);
+    expect(proof.leaves).toHaveLength(5);
+    const saved = inspectOwnedSyntheticData(identity.email);
+    expect(saved.foodRecords).toHaveLength(5);
+    expect(saved.foodRecords[0].quantityGrams).toBeCloseTo(100.333333333333, 11);
+    const roots = await foodRoots(page), dish = roots.results.find(r => r.input.kind === 'DISH')!;
+    expect(dish.componentCount).toBe(4);
+    expect(dish.input).toMatchObject({ kind: 'DISH', portion: { kind: 'FRACTION', numerator: 1, denominator: 3 } });
+    expect(dish.preview.leaves[0].inputGrams).toBe(301);
+    expect(dish.preview.leaves[0].consumedGrams).toBeCloseTo(301 / 3, 10);
+    await history(page);
+    await expect(page.locator('article.saved-entry-root')).toHaveCount(2);
+    const card = page.locator(`[data-record-id="dish:${dish.id}"]`);
+    await expect(card).toContainText('1 / 3 of whole recipe');
+    await card.getByRole('button', { name: /More actions for/ }).click(); await page.getByRole('menuitem', { name: 'Log again', exact: true }).click();
+    await expect(page.getByRole('heading', { name: 'Add food', exact: true })).toBeVisible();
+    await page.getByText('Edit dish 1', { exact: true }).click();
+    for (let i = 1; i <= 4; i++)
+        await expect(page.getByLabel(`Used in the full recipe (g) ${i}`, { exact: true })).toHaveValue('');
+    await expect(page.getByLabel('Parts eaten', { exact: true })).toHaveValue('');
+    await expect(page.getByLabel('Total equal parts', { exact: true })).toHaveValue('');
+    await page.getByRole('button', { name: 'Use last recipe', exact: true }).click();
+    await expect(page.getByLabel('Used in the full recipe (g) 1', { exact: true })).toHaveValue('301');
+    expect(inspectOwnedSyntheticData(identity.email)).toEqual(saved);
+    await page.screenshot({ path: 'test-results/ux-v3/dish-reuse-empty-portion.png', fullPage: true });
+});
+for (const portion of ['PERSONAL', 'PERCENT', 'SERVINGS'] as const)
+    test(`TUX dish: real ${portion} input remains its own saved portion meaning`, async ({ page }) => {
+        const identity = await newOwner(page, 'v3-' + portion.toLowerCase());
+        await beginFood(page);
+        await makeDish(page, portion);
+        await foodReview(page);
+        expect(inspectOwnedSyntheticData(identity.email).foodRecords).toHaveLength(0);
+        await confirmFood(page);
+        const roots = await foodRoots(page);
+        expect(roots.results[0].input).toMatchObject({ kind: 'DISH', portion: portion === 'PERSONAL' ? { kind: 'PERSONAL' } : portion === 'PERCENT' ? { kind: 'PERCENT', percent: 33.3 } : { kind: 'SERVINGS', total: 3, eaten: 1 } });
+        expect(roots.results[0].componentCount).toBe(4);
+        const expected = portion === 'PERSONAL' ? 301 : portion === 'PERCENT' ? 100.233 : 100.333333333333;
+        expect(inspectOwnedSyntheticData(identity.email).foodRecords[0].quantityGrams).toBeCloseTo(expected, 11);
+        expect(roots.results[0].preview.leaves[0].consumedGrams).toBeCloseTo(expected, 11);
+    });

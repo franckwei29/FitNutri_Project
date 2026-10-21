@@ -1,0 +1,15 @@
+import {beforeEach,describe,expect,it,vi} from 'vitest'
+import {fetchAccounts,changeAccountStatus,readAccountState} from '../../src/api/admin'
+import {apiGet,apiPatch} from '../../src/api/client'
+import {ApiRequestError,normaliseApiError} from '../../src/api/errors'
+import {user} from '../fixtures/profile'
+vi.mock('../../src/api/client',()=>({apiGet:vi.fn(),apiPatch:vi.fn()}))
+const account={...user,id:'42',enabled:true,version:2},page={results:[account],totalMatches:1,page:0,size:20,hasMore:false}
+beforeEach(()=>vi.resetAllMocks())
+describe('F16 administrator contract',()=>{
+ it('uses bounded server search with exact page metadata',async()=>{vi.mocked(apiGet).mockResolvedValue(page);expect(await fetchAccounts('name',0,20)).toEqual(page);expect(apiGet).toHaveBeenCalledExactlyOnceWith('/admin/users',{params:{query:'name',page:0,size:20},signal:undefined})})
+ it('rejects mismatched pagination, duplicates and private fields',async()=>{for(const raw of [{...page,page:1},{...page,hasMore:true},{...page,results:[{...account,passwordHash:'private'}]},{...page,results:[account,account],totalMatches:2}]){vi.mocked(apiGet).mockResolvedValue(raw);await expect(fetchAccounts('',0,20)).rejects.toThrow()}})
+ it('sends only captured version and checks acknowledged identity/state/version',async()=>{vi.mocked(apiPatch).mockResolvedValue({...account,enabled:false,version:3});expect((await changeAccountStatus(account,false)).enabled).toBe(false);expect(apiPatch).toHaveBeenCalledExactlyOnceWith('/admin/users/42/deactivate',{expectedVersion:2});for(const raw of [{...account,id:'43',enabled:false,version:3},{...account,enabled:false,version:2},{...account,enabled:true,version:3}]){vi.mocked(apiPatch).mockResolvedValue(raw);await expect(changeAccountStatus(account,false)).rejects.toMatchObject({outcome:'unknown',writeAttempted:true})}})
+ it('invalid local input cannot reach mutation and protected state is a known rejection',async()=>{await expect(changeAccountStatus({...account,version:-1},false)).rejects.toMatchObject({outcome:'rejected',writeAttempted:false});expect(apiPatch).not.toHaveBeenCalled();expect(normaliseApiError({isAxiosError:true,response:{status:409,data:{status:409,code:'ACCOUNT_PROTECTED',message:'Protected',path:'/api/admin/users/1/deactivate',requestId:'d89384b8-09ab-4a56-95d6-b80ed43a8293',fieldErrors:[],retryable:false}}},'PATCH',true).outcome).toBe('rejected');expect(normaliseApiError(new ApiRequestError({message:'Protected',code:'ACCOUNT_PROTECTED',outcome:'rejected',writeAttempted:true}),'PATCH',true).outcome).toBe('rejected')})
+ it('reads exact immutable identity without mistaking substring email matches for it',async()=>{vi.mocked(apiGet).mockResolvedValueOnce({results:[{...account,id:'43',email:'prefix-'+account.email}],totalMatches:2,page:0,size:1,hasMore:true}).mockResolvedValueOnce({results:[account],totalMatches:2,page:1,size:1,hasMore:false});expect(await readAccountState(account,undefined,1)).toEqual(account);expect(apiGet).toHaveBeenCalledTimes(2)})
+})

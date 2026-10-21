@@ -1,0 +1,5 @@
+import type {ExerciseRecord,FoodRecord} from '../../src/api/contracts'
+import {exerciseType} from './exercise'
+const common={id:'9007199254740993',clientEntryId:'0d9c91d6-8ecb-4a43-bdca-064a0a4e90dd',recordDate:'2026-10-16',source:'MANUAL' as const,version:2,dataQuality:'CURRENT' as const,createdAt:'2026-10-16T01:00:00Z',updatedAt:'2026-10-16T01:00:00Z'}
+export function savedFood(overrides:Partial<FoodRecord>={}):FoodRecord{return {...common,reference:{referenceId:'10',publicFoodKey:'F007661',displayName:'Rice',active:false,dataset:{id:'1',name:'AUSNUT',release:'2023',revision:'r1',sourceUrl:null,nutrientPolicy:'per100g',verified:true}},foodName:'Rice',quantityGrams:150,mealType:'LUNCH',nutrients:{energyKj:988.5,proteinGrams:4.65,fatGrams:0.3,carbsGrams:52.05},...overrides}}
+export function savedExercise(overrides:Partial<ExerciseRecord>={}):ExerciseRecord{return {...common,exerciseType:{...exerciseType,active:false},exerciseName:exerciseType.displayName,durationMinutes:10.5,estimatedKj:183.233,estimateStatus:'AVAILABLE',weightKgUsed:71.5,weightDateUsed:'2026-10-15',metUsed:3.5,formulaVersion:'MET_KG_MIN_KJ_V1',...overrides}}

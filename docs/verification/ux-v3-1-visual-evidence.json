@@ -1,0 +1,116 @@
+{
+  "syntheticDataOnly": true,
+  "viewports": [
+    360,
+    375,
+    768,
+    1280,
+    1440
+  ],
+  "zoom": "200% document CSS zoom in actual Chrome, not browser-toolbar/OS zoom",
+  "images": [
+    {
+      "file": "v31-dashboard-1280.png",
+      "width": 1280,
+      "height": 2516,
+      "sha256": "c6c7b3e4c94cb870d397142b7a2e570c4043d6632763ec8f012028b091deb011"
+    },
+    {
+      "file": "v31-dashboard-1440.png",
+      "width": 1440,
+      "height": 2489,
+      "sha256": "c56a1efe4d2b87caa35ccf6c3eaade1138fbae0011e2a0a043a38651bf262588"
+    },
+    {
+      "file": "v31-dashboard-360.png",
+      "width": 360,
+      "height": 4074,
+      "sha256": "32b0d1f7692c063bc2af46edf84a87a0a7042388784f9ec70d6803bdf45fcf8c"
+    },
+    {
+      "file": "v31-dashboard-375.png",
+      "width": 375,
+      "height": 3865,
+      "sha256": "0549a6b410a7d4ef45de9709ec30f9e2837ae79129384c9083999d8fc6423551"
+    },
+    {
+      "file": "v31-dashboard-768.png",
+      "width": 768,
+      "height": 3440,
+      "sha256": "e35e5908b775a1e7e50343992f26e5e5fad72228e6c2658d4be60138ffef9431"
+    },
+    {
+      "file": "v31-food-card-1280.png",
+      "width": 534,
+      "height": 356,
+      "sha256": "c3d5f82156d504a2c7d078772d0bd2c29ac8e19f3af7302ea9f15bcb85634fb1"
+    },
+    {
+      "file": "v31-food-card-1440.png",
+      "width": 608,
+      "height": 329,
+      "sha256": "3b15c9b24047d1fa579c0cd169fd0ed6b309ee2ac8725dcca3ad19554156f3e6"
+    },
+    {
+      "file": "v31-food-card-360.png",
+      "width": 290,
+      "height": 482,
+      "sha256": "ddecf646bdaf6b5cc68d8da3d9d4f2b40291bbee606f2bde6c6f54140b5833ef"
+    },
+    {
+      "file": "v31-food-card-375.png",
+      "width": 305,
+      "height": 404,
+      "sha256": "d5811ef5419edfbe5f51c4cdbdee5eea1902ecb765ccca9162bdca5787996e9a"
+    },
+    {
+      "file": "v31-food-card-768.png",
+      "width": 682,
+      "height": 329,
+      "sha256": "a1c38efeb341ea6308ae474374a0afa956af4bcd5c790dc44dca06f8def3da19"
+    },
+    {
+      "file": "v31-history-1280.png",
+      "width": 1280,
+      "height": 4064,
+      "sha256": "b8aa6157b1d324b7fe7995c0c550eba93a3e2c309c3665049ef1a11e2f9f7f89"
+    },
+    {
+      "file": "v31-history-1440.png",
+      "width": 1440,
+      "height": 4064,
+      "sha256": "15f4012a9aeaa1770d5f092b4a31d9f8fe605740ff5dd06cd9cfd7ecde2b6500"
+    },
+    {
+      "file": "v31-history-360.png",
+      "width": 360,
+      "height": 5866,
+      "sha256": "bc00c04b672eb73b34770721473280e6ad89a2b864a49d3d6085fa496a7f2a20"
+    },
+    {
+      "file": "v31-history-375.png",
+      "width": 375,
+      "height": 5600,
+      "sha256": "4d5f8d63628af11817910e3411554d323d5cbaec700d1d842e6872b22681c68f"
+    },
+    {
+      "file": "v31-history-768.png",
+      "width": 768,
+      "height": 4628,
+      "sha256": "e76da46dbe2abe1d34bbb2c3df3cd98324b1b4a7a1f32439d49f5be0b16fd0be"
+    },
+    {
+      "file": "v31-history-zoom200.png",
+      "width": 1280,
+      "height": 9488,
+      "sha256": "780dc0563a22b248cb3ef8f62f0e77df3aa0f65e59b1f5a0f96bab47f35009d6"
+    },
+    {
+      "file": "v31-floating-save-mobile.png",
+      "width": 375,
+      "height": 900,
+      "sha256": "c77f267919df3a3adfd5bbeb399990894e8ba1045b4aa208ce1c7534ac116a38",
+      "run": "final complete32-case Chrome suite"
+    }
+  ]
+}

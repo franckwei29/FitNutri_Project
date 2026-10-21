@@ -1,0 +1,672 @@
+{
+  "format": "fitnutri.movement-catalogue.v1",
+  "revision": "ux-movements-r1",
+  "defaultOptionRevision": "ux-exercise-r1",
+  "entries": [
+    {
+      "movementKey": "bench-press",
+      "displayName": "Bench press",
+      "aliases": [
+        "bench press",
+        "卧推",
+        "杠铃卧推"
+      ],
+      "bodyRegion": "CHEST",
+      "equipmentType": "BARBELL",
+      "loadBasis": "TOTAL_BARBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "incline-bench-press",
+      "displayName": "Incline bench press",
+      "aliases": [
+        "incline bench press",
+        "上斜卧推"
+      ],
+      "bodyRegion": "CHEST",
+      "equipmentType": "BARBELL",
+      "loadBasis": "TOTAL_BARBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "chest-press",
+      "displayName": "Seated chest press",
+      "aliases": [
+        "chest press",
+        "坐姿胸推",
+        "胸推机"
+      ],
+      "bodyRegion": "CHEST",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "pec-deck",
+      "displayName": "Pec deck fly",
+      "aliases": [
+        "pec deck",
+        "butterfly machine",
+        "蝴蝶机夹胸",
+        "蝴蝶机"
+      ],
+      "bodyRegion": "CHEST",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "cable-fly",
+      "displayName": "Cable fly",
+      "aliases": [
+        "cable fly",
+        "cable crossover",
+        "绳索夹胸",
+        "龙门架夹胸",
+        "龙门架"
+      ],
+      "bodyRegion": "CHEST",
+      "equipmentType": "CABLE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "lat-pulldown",
+      "displayName": "Lat pulldown",
+      "aliases": [
+        "lat pulldown",
+        "高位下拉"
+      ],
+      "bodyRegion": "BACK",
+      "equipmentType": "CABLE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "seated-cable-row",
+      "displayName": "Seated cable row (strength)",
+      "aliases": [
+        "seated cable row",
+        "strength row",
+        "坐姿划船",
+        "划船",
+        "力量划船"
+      ],
+      "bodyRegion": "BACK",
+      "equipmentType": "CABLE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "assisted-pullup",
+      "displayName": "Assisted pull-up",
+      "aliases": [
+        "assisted pull up",
+        "辅助引体",
+        "辅助引体向上"
+      ],
+      "bodyRegion": "BACK",
+      "equipmentType": "ASSISTED_MACHINE",
+      "loadBasis": "ASSISTANCE",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "barbell-row",
+      "displayName": "Barbell row",
+      "aliases": [
+        "barbell row",
+        "杠铃划船"
+      ],
+      "bodyRegion": "BACK",
+      "equipmentType": "BARBELL",
+      "loadBasis": "TOTAL_BARBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "single-arm-dumbbell-row",
+      "displayName": "Single-arm dumbbell row",
+      "aliases": [
+        "single arm dumbbell row",
+        "单臂哑铃划船",
+        "哑铃划船"
+      ],
+      "bodyRegion": "BACK",
+      "equipmentType": "DUMBBELL",
+      "loadBasis": "PER_DUMBBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "back-extension",
+      "displayName": "Back extension",
+      "aliases": [
+        "back extension",
+        "背部伸展"
+      ],
+      "bodyRegion": "BACK",
+      "equipmentType": "BODYWEIGHT",
+      "loadBasis": "ADDED_LOAD",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "shoulder-press-machine",
+      "displayName": "Shoulder press machine",
+      "aliases": [
+        "shoulder press machine",
+        "肩推机"
+      ],
+      "bodyRegion": "SHOULDERS",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "dumbbell-shoulder-press",
+      "displayName": "Dumbbell shoulder press",
+      "aliases": [
+        "dumbbell shoulder press",
+        "哑铃肩推"
+      ],
+      "bodyRegion": "SHOULDERS",
+      "equipmentType": "DUMBBELL",
+      "loadBasis": "PER_DUMBBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "lateral-raise",
+      "displayName": "Dumbbell lateral raise",
+      "aliases": [
+        "lateral raise",
+        "侧平举"
+      ],
+      "bodyRegion": "SHOULDERS",
+      "equipmentType": "DUMBBELL",
+      "loadBasis": "PER_DUMBBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "reverse-fly",
+      "displayName": "Reverse fly machine",
+      "aliases": [
+        "reverse fly",
+        "反向飞鸟"
+      ],
+      "bodyRegion": "SHOULDERS",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "squat",
+      "displayName": "Barbell squat",
+      "aliases": [
+        "squat",
+        "barbell squat",
+        "深蹲",
+        "杠铃深蹲"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "BARBELL",
+      "loadBasis": "TOTAL_BARBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "smith-squat",
+      "displayName": "Smith machine squat",
+      "aliases": [
+        "smith squat",
+        "smith machine",
+        "史密斯深蹲",
+        "史密斯"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "SMITH_MACHINE",
+      "loadBasis": "TOTAL_BARBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "hack-squat",
+      "displayName": "Hack squat machine",
+      "aliases": [
+        "hack squat",
+        "哈克深蹲"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "leg-press",
+      "displayName": "Leg press",
+      "aliases": [
+        "leg press",
+        "腿举"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "leg-extension",
+      "displayName": "Leg extension",
+      "aliases": [
+        "leg extension",
+        "腿屈伸"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "seated-leg-curl",
+      "displayName": "Seated leg curl",
+      "aliases": [
+        "seated leg curl",
+        "坐姿腿弯举"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "lying-leg-curl",
+      "displayName": "Lying leg curl",
+      "aliases": [
+        "lying leg curl",
+        "俯卧腿弯举"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "hip-thrust",
+      "displayName": "Barbell hip thrust",
+      "aliases": [
+        "hip thrust",
+        "臀推"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "BARBELL",
+      "loadBasis": "TOTAL_BARBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "hip-abduction",
+      "displayName": "Hip abduction machine",
+      "aliases": [
+        "hip abduction",
+        "髋外展"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "hip-adduction",
+      "displayName": "Hip adduction machine",
+      "aliases": [
+        "hip adduction",
+        "髋内收"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "calf-raise",
+      "displayName": "Calf raise machine",
+      "aliases": [
+        "calf raise",
+        "提踵"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "deadlift",
+      "displayName": "Barbell deadlift",
+      "aliases": [
+        "deadlift",
+        "硬拉"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "BARBELL",
+      "loadBasis": "TOTAL_BARBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "kettlebell-goblet-squat",
+      "displayName": "Kettlebell goblet squat",
+      "aliases": [
+        "kettlebell goblet squat",
+        "kettlebell",
+        "壶铃深蹲",
+        "壶铃"
+      ],
+      "bodyRegion": "LEGS_GLUTES",
+      "equipmentType": "KETTLEBELL",
+      "loadBasis": "ADDED_LOAD",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "biceps-curl",
+      "displayName": "Dumbbell biceps curl",
+      "aliases": [
+        "biceps curl",
+        "二头弯举"
+      ],
+      "bodyRegion": "ARMS",
+      "equipmentType": "DUMBBELL",
+      "loadBasis": "PER_DUMBBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "triceps-extension",
+      "displayName": "Dumbbell triceps extension",
+      "aliases": [
+        "triceps extension",
+        "三头伸展"
+      ],
+      "bodyRegion": "ARMS",
+      "equipmentType": "DUMBBELL",
+      "loadBasis": "PER_DUMBBELL",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "cable-pushdown",
+      "displayName": "Cable triceps pushdown",
+      "aliases": [
+        "cable pushdown",
+        "triceps pushdown",
+        "绳索下压"
+      ],
+      "bodyRegion": "ARMS",
+      "equipmentType": "CABLE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "assisted-dip",
+      "displayName": "Assisted dip",
+      "aliases": [
+        "assisted dip",
+        "辅助双杠臂屈伸"
+      ],
+      "bodyRegion": "ARMS",
+      "equipmentType": "ASSISTED_MACHINE",
+      "loadBasis": "ASSISTANCE",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "ab-crunch-machine",
+      "displayName": "Abdominal crunch machine",
+      "aliases": [
+        "ab crunch",
+        "abdominal crunch",
+        "卷腹机"
+      ],
+      "bodyRegion": "CORE",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "torso-rotation",
+      "displayName": "Torso rotation machine",
+      "aliases": [
+        "torso rotation",
+        "躯干旋转"
+      ],
+      "bodyRegion": "CORE",
+      "equipmentType": "MACHINE",
+      "loadBasis": "MACHINE_DISPLAY",
+      "allowedFields": [
+        "setCount",
+        "repetitions",
+        "loadKg"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "leg-raise",
+      "displayName": "Leg raise",
+      "aliases": [
+        "leg raise",
+        "举腿"
+      ],
+      "bodyRegion": "CORE",
+      "equipmentType": "BODYWEIGHT",
+      "loadBasis": "ADDED_LOAD",
+      "allowedFields": [
+        "setCount",
+        "repetitions"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    },
+    {
+      "movementKey": "plank",
+      "displayName": "Plank",
+      "aliases": [
+        "plank",
+        "平板支撑"
+      ],
+      "bodyRegion": "CORE",
+      "equipmentType": "BODYWEIGHT",
+      "loadBasis": "ADDED_LOAD",
+      "allowedFields": [
+        "setCount"
+      ],
+      "defaultOptionKey": "strength-general",
+      "reviewStatus": "REVIEWED"
+    }
+  ]
+}

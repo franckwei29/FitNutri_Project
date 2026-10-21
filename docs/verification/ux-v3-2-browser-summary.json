@@ -1,0 +1,500 @@
+{
+  "stats": {
+    "startTime": "2026-10-18T03:41:16.911Z",
+    "duration": 552498.853,
+    "expected": 34,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "file": "action-style-v3.spec.ts",
+      "title": "T32 centered single-line feedback and compact toolbar across five widths",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 34486,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "action-style-v3.spec.ts",
+      "title": "T32 actual browser 200 percent zoom keeps saved feedback and actions usable",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 11818,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "advanced-contract.spec.ts",
+      "title": "unconfigured helpers fail closed while real manual recording stays available without record writes",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 8779,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "core-flow.spec.ts",
+      "title": "M1 real register-to-dashboard flow preserves cancellation, snapshots and missing energy",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 28210,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "dish-entry-v3.spec.ts",
+      "title": "TUX dish: exact one-third recipe plus independent single saves five leaves as two roots;reuse clears all quantities",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 16946,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "dish-entry-v3.spec.ts",
+      "title": "TUX dish: real PERSONAL input remains its own saved portion meaning",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 12740,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "dish-entry-v3.spec.ts",
+      "title": "TUX dish: real PERCENT input remains its own saved portion meaning",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 13518,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "dish-entry-v3.spec.ts",
+      "title": "TUX dish: real SERVINGS input remains its own saved portion meaning",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 13598,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "exercise-entry-v3.spec.ts",
+      "title": "TUX Quick: Basketball records outside Gym with no dated weight and keeps unavailable energy distinct from zero",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10028,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "exercise-entry-v3.spec.ts",
+      "title": "TUX Quick equipment: blank details save;invalid optional speed blocks;zero incline survives and details never alter MET energy",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 11424,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "food-entry-v3.spec.ts",
+      "title": "TUX food: real two-meal local Add,zero-write Review,one atomic confirmation and owned root correction",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 12061,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "grouped-summary.spec.ts",
+      "title": "TUX conservation: independent SQL leaf sums equal summaries and roots across portion/date correction and whole deletion",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 22600,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "legacy-regression-v3.spec.ts",
+      "title": "TUX118/119: real USER and ADMIN sessions cannot access another owner groups,preview,mutation or proof",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 24921,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "legacy-regression-v3.spec.ts",
+      "title": "TUX116/129: V1 creation/replay/correction retain minimal immutable proof alongside V2 records",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 13356,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "profile-admin.spec.ts",
+      "title": "T-PROFILE-04/T-WEIGHT-01/02: null targets, unit changes and dated weights preserve saved records",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 19296,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "profile-admin.spec.ts",
+      "title": "T-ADMIN-02: separate administrator session disables and restores access without changing private data",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 18728,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "record-management.spec.ts",
+      "title": "T-EDIT-03: independent real sessions cannot silently overwrite the same food version",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 17827,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "record-management.spec.ts",
+      "title": "T-EDIT-02/T-DELETE-01: dated activity correction and confirmed deletion preserve original proofs",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 20209,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "record-management.spec.ts",
+      "title": "T-AUTH-07: switching accounts cannot expose the previous owner record",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 15405,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "record-presentation-v31.spec.ts",
+      "title": "T31 presentation: real long-name roots at five widths,200percent CSS zoom,keyboard menus and complete details",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 34504,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refresh-manual-history.spec.ts",
+      "title": "TUX111: hard reload discards a complex unsubmitted recipe without persistence or writes",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 14761,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refresh-manual-history.spec.ts",
+      "title": "TUX112: reload during a real pending save forgets identity; manual History sees its later commit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 12962,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "save-feedback-v31.spec.ts",
+      "title": "T31 today: verified create returns once, floats without shifting layout, expires, Back/reload do not resubmit",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 13583,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "save-feedback-v31.spec.ts",
+      "title": "T31 historical save: today remains empty, persistent link locates exact saved roots",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9061,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "save-feedback-v31.spec.ts",
+      "title": "T31 confirmed write with dropped overview reads: persistent warning retries GETs without another create",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 11332,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "save-feedback-v31.spec.ts",
+      "title": "T31 chunk failure after verified save never resubmits; reload shows the committed root without replaying notice",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10110,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "save-unknown-v3.spec.ts",
+      "title": "TUX106: real post-commit response loss recovers by GET without another POST",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10476,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "save-unknown-v3.spec.ts",
+      "title": "TUX108: real receipt404 while the original transaction waits retains its only identity",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 25477,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "submission-recovery.spec.ts",
+      "title": "T-IDEM-04: real committed lost response recovers the original two-food receipt once",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10732,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "submission-recovery.spec.ts",
+      "title": "T-IDEM-05: receipt 404 while original POST waits never creates another batch",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 26557,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "ux-accessibility-v3.spec.ts",
+      "title": "TUX007/013: mobile multiline consent remains associated,first-line aligned and keyboard operable",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5657,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "ux-accessibility-v3.spec.ts",
+      "title": "TUX008/009/010/012/013: actual graph order,axes,table,units and bounded saved notice",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 19041,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "ux-accessibility-v3.spec.ts",
+      "title": "TUX004: real successful registration notice disappears within three seconds without disturbing login fields",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5060,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "workout-entry-v3.spec.ts",
+      "title": "TUX Gym: one50minute strength period plus20minute unavailable cardio,optional movement details,whole-root correction/reuse/delete",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 16221,
+          "retry": 0
+        }
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "name": "center-observations",
+      "data": {
+        "version": "155.0.8059.80",
+        "observations": [
+          {
+            "width": 360,
+            "box": {
+              "x": 78.84375,
+              "y": 412.2734375,
+              "width": 202.3125,
+              "height": 75.453125
+            }
+          },
+          {
+            "width": 375,
+            "box": {
+              "x": 86.34375,
+              "y": 412.2734375,
+              "width": 202.3125,
+              "height": 75.453125
+            }
+          },
+          {
+            "width": 768,
+            "box": {
+              "x": 260.171875,
+              "y": 403.984375,
+              "width": 247.65625,
+              "height": 92.03125
+            }
+          },
+          {
+            "width": 1280,
+            "box": {
+              "x": 516.171875,
+              "y": 403.984375,
+              "width": 247.65625,
+              "height": 92.03125
+            }
+          },
+          {
+            "width": 1440,
+            "box": {
+              "x": 596.171875,
+              "y": 403.984375,
+              "width": 247.65625,
+              "height": 92.03125
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "actual-browser-zoom",
+      "data": {
+        "width": 640,
+        "height": 406,
+        "outer": 1280,
+        "dpr": 2,
+        "cssZoom": "1"
+      }
+    },
+    {
+      "name": "viewport-and-zoom-scope",
+      "data": {
+        "browserVersion": "155.0.8059.80",
+        "widths": [
+          360,
+          375,
+          768,
+          1280,
+          1440
+        ],
+        "zoom": "200% document CSS zoom in actual installed Chrome; not an OS/browser-toolbar zoom claim",
+        "syntheticOnly": true
+      }
+    }
+  ]
+}

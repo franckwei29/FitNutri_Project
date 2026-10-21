@@ -1,0 +1,7 @@
+# F00 Demo presentation migration
+
+Source: Demo main.tsx theme, complete styles.css and ui.tsx presentation; source-map records provenance. One ThemeProvider/QueryClient, StrictMode retained. Data router created once; shared Page/Brand/dialog/date/select/errors/buttons reused. DateField takes application today explicitly instead of importing Demo domain/store. Dialog title IDs unique with useId. Noncomponent focus/message helpers separated to satisfy existing Fast Refresh lint, not suppressed. Original index.css/App.css no longer imported. Existing LoginPage deliberately remains scaffold until F03/F04; no claim of full Demo/auth integration.
+
+Tests written first (missing-module RED). Component tests4 PASS: original internal brand link; pending button prevents click; accessible dialog Cancel never confirms; supplied date max and live error region. Production build PASS, lint PASS after helper extraction; existing >500kB bundle warning remains (667.84kB). Actual localhost browser at818x907 verified brand/green theme, heading, form, primary button and unobstructed layout. Full responsive/Safari/E2E remains NOT RUN. No fake data or Demo store/seed entered production.
+
+Added pinned test dependencies: {'vitest': '4.1.12', '@testing-library/react': '16.3.3', 'jsdom': '29.1.1'}. Registry engines checked; jsdom30.1.3 required Node24.15 and was replaced before commit by compatible29; no Node/framework upgrade. All pre-existing locked package versions unchanged (checked against HEAD). Test source strict typecheck available. Peer review/UAT PENDING.

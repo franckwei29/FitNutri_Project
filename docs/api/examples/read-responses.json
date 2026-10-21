@@ -1,0 +1,1868 @@
+[
+  {
+    "schema": "DaySummary",
+    "value": {
+      "day": {
+        "recordDate": "2020-01-02",
+        "intake": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "protein": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "fat": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "carbs": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "expenditure": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "activityMinutes": null,
+        "foodCount": 0,
+        "exerciseCount": 0,
+        "foodEntryCount": 0,
+        "exerciseEntryCount": 0
+      },
+      "goalComparison": null,
+      "facts": []
+    }
+  },
+  {
+    "schema": "PeriodSummary",
+    "value": {
+      "rangeStart": "2020-01-01",
+      "rangeEnd": "2020-01-10",
+      "calendarDayCount": 10,
+      "days": [
+        {
+          "recordDate": "2020-01-01",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        {
+          "recordDate": "2020-01-02",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        {
+          "recordDate": "2020-01-03",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        {
+          "recordDate": "2020-01-04",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        {
+          "recordDate": "2020-01-05",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        {
+          "recordDate": "2020-01-06",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        {
+          "recordDate": "2020-01-07",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        {
+          "recordDate": "2020-01-08",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        {
+          "recordDate": "2020-01-09",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        {
+          "recordDate": "2020-01-10",
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        }
+      ],
+      "totals": {
+        "intake": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "protein": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "fat": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "carbs": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "expenditure": {
+          "knownSum": null,
+          "recordCount": 0,
+          "knownValueCount": 0,
+          "missingValueCount": 0,
+          "legacyValueCount": 0,
+          "hasData": false,
+          "partial": false
+        },
+        "activityMinutes": null,
+        "foodCount": 0,
+        "exerciseCount": 0,
+        "foodEntryCount": 0,
+        "exerciseEntryCount": 0
+      },
+      "averages": {
+        "intake": {
+          "value": null,
+          "knownDayCount": 0
+        },
+        "protein": {
+          "value": null,
+          "knownDayCount": 0
+        },
+        "fat": {
+          "value": null,
+          "knownDayCount": 0
+        },
+        "carbs": {
+          "value": null,
+          "knownDayCount": 0
+        },
+        "expenditure": {
+          "value": null,
+          "knownDayCount": 0
+        },
+        "activityMinutes": {
+          "value": null,
+          "knownDayCount": 0
+        }
+      },
+      "goalComparison": null,
+      "facts": []
+    }
+  },
+  {
+    "schema": "WeeklySummary",
+    "value": {
+      "current": {
+        "rangeStart": "2020-01-01",
+        "rangeEnd": "2020-01-07",
+        "calendarDayCount": 7,
+        "days": [
+          {
+            "recordDate": "2020-01-01",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2020-01-02",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2020-01-03",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2020-01-04",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2020-01-05",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2020-01-06",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2020-01-07",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          }
+        ],
+        "totals": {
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        "averages": {
+          "intake": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "protein": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "fat": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "carbs": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "expenditure": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "activityMinutes": {
+            "value": null,
+            "knownDayCount": 0
+          }
+        },
+        "goalComparison": null,
+        "facts": []
+      },
+      "previous": {
+        "rangeStart": "2019-12-25",
+        "rangeEnd": "2019-12-31",
+        "calendarDayCount": 7,
+        "days": [
+          {
+            "recordDate": "2019-12-25",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2019-12-26",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2019-12-27",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2019-12-28",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2019-12-29",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2019-12-30",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          },
+          {
+            "recordDate": "2019-12-31",
+            "intake": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "protein": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "fat": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "carbs": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "expenditure": {
+              "knownSum": null,
+              "recordCount": 0,
+              "knownValueCount": 0,
+              "missingValueCount": 0,
+              "legacyValueCount": 0,
+              "hasData": false,
+              "partial": false
+            },
+            "activityMinutes": null,
+            "foodCount": 0,
+            "exerciseCount": 0,
+            "foodEntryCount": 0,
+            "exerciseEntryCount": 0
+          }
+        ],
+        "totals": {
+          "intake": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "protein": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "fat": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "carbs": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "expenditure": {
+            "knownSum": null,
+            "recordCount": 0,
+            "knownValueCount": 0,
+            "missingValueCount": 0,
+            "legacyValueCount": 0,
+            "hasData": false,
+            "partial": false
+          },
+          "activityMinutes": null,
+          "foodCount": 0,
+          "exerciseCount": 0,
+          "foodEntryCount": 0,
+          "exerciseEntryCount": 0
+        },
+        "averages": {
+          "intake": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "protein": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "fat": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "carbs": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "expenditure": {
+            "value": null,
+            "knownDayCount": 0
+          },
+          "activityMinutes": {
+            "value": null,
+            "knownDayCount": 0
+          }
+        },
+        "goalComparison": null,
+        "facts": []
+      }
+    }
+  },
+  {
+    "schema": "FoodCalculationChangedV2",
+    "value": {
+      "status": 409,
+      "code": "CALCULATION_CHANGED",
+      "message": "Synthetic conflict: review the current food preview.",
+      "path": "/api/v2/food/batches",
+      "requestId": "11111111-1111-4111-8111-111111111111",
+      "fieldErrors": [],
+      "retryable": false,
+      "currentPreview": {
+        "entries": [
+          {
+            "kind": "SINGLE",
+            "clientEntryId": "22222222-2222-4222-8222-222222222222",
+            "leaves": [
+              {
+                "clientEntryId": "22222222-2222-4222-8222-222222222222",
+                "referenceId": "101",
+                "inputGrams": 100,
+                "consumedGrams": 100,
+                "nutrients": {
+                  "energyKj": 500,
+                  "proteinGrams": 1,
+                  "fatGrams": 0,
+                  "carbsGrams": 1
+                }
+              }
+            ],
+            "totals": {
+              "energyKj": 500,
+              "proteinGrams": 1,
+              "fatGrams": 0,
+              "carbsGrams": 1
+            }
+          }
+        ],
+        "totals": {
+          "energyKj": 500,
+          "proteinGrams": 1,
+          "fatGrams": 0,
+          "carbsGrams": 1
+        },
+        "fingerprint": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "calculationPolicy": "FOOD_ENTRY_V2_REFERENCE_RATIONAL_V1",
+        "inputSignature": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      }
+    }
+  },
+  {
+    "schema": "FoodRootV2",
+    "value": {
+      "id": "7",
+      "version": 0,
+      "recordDate": "2020-01-02",
+      "source": "MANUAL",
+      "createdAt": "2020-01-02T00:00:00Z",
+      "updatedAt": "2020-01-02T00:00:00Z",
+      "dataQuality": "CURRENT",
+      "displayName": "Synthetic current food",
+      "input": {
+        "kind": "SINGLE",
+        "clientEntryId": "22222222-2222-4222-8222-222222222222",
+        "referenceId": "101",
+        "quantityGrams": 100,
+        "mealType": "LUNCH",
+        "selectionKind": "USER_SELECTED"
+      },
+      "preview": {
+        "kind": "SINGLE",
+        "clientEntryId": "22222222-2222-4222-8222-222222222222",
+        "leaves": [
+          {
+            "clientEntryId": "22222222-2222-4222-8222-222222222222",
+            "referenceId": "101",
+            "inputGrams": 100,
+            "consumedGrams": 100,
+            "nutrients": {
+              "energyKj": 500,
+              "proteinGrams": 1,
+              "fatGrams": 0,
+              "carbsGrams": 1
+            }
+          }
+        ],
+        "totals": {
+          "energyKj": 500,
+          "proteinGrams": 1,
+          "fatGrams": 0,
+          "carbsGrams": 1
+        }
+      },
+      "componentCount": 1
+    }
+  },
+  {
+    "schema": "FoodRootV2",
+    "value": {
+      "id": "8",
+      "version": 0,
+      "recordDate": "2020-01-02",
+      "source": "IMAGE",
+      "createdAt": "2020-01-02T00:00:00Z",
+      "updatedAt": "2020-01-02T00:00:00Z",
+      "dataQuality": "LEGACY_UNVERIFIED",
+      "displayName": "Synthetic preserved legacy label",
+      "input": {
+        "kind": "SINGLE",
+        "clientEntryId": "22222222-2222-4222-8222-222222222222",
+        "referenceId": null,
+        "quantityGrams": 123.456,
+        "mealType": "SNACK"
+      },
+      "preview": {
+        "kind": "SINGLE",
+        "clientEntryId": "22222222-2222-4222-8222-222222222222",
+        "leaves": [
+          {
+            "clientEntryId": "22222222-2222-4222-8222-222222222222",
+            "referenceId": null,
+            "inputGrams": 123.456,
+            "consumedGrams": 123.456,
+            "nutrients": {
+              "energyKj": null,
+              "proteinGrams": null,
+              "fatGrams": null,
+              "carbsGrams": null
+            }
+          }
+        ],
+        "totals": {
+          "energyKj": null,
+          "proteinGrams": null,
+          "fatGrams": null,
+          "carbsGrams": null
+        }
+      },
+      "componentCount": 1
+    }
+  },
+  {
+    "schema": "ExercisePreviewV2",
+    "value": {
+      "periods": [
+        {
+          "clientEntryId": "22222222-2222-4222-8222-222222222222",
+          "durationMinutes": 20,
+          "status": "NO_APPLICABLE_REFERENCE",
+          "estimatedKj": null,
+          "calculationFingerprint": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "unavailableReason": "Synthetic example: no reviewed generic mapping."
+        }
+      ],
+      "totalMinutes": 20,
+      "knownEnergyKj": null,
+      "partial": false,
+      "fingerprint": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "inputSignature": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  },
+  {
+    "schema": "ExerciseRootV2",
+    "value": {
+      "id": "9",
+      "version": 0,
+      "recordDate": "2020-01-02",
+      "source": "MANUAL",
+      "createdAt": "2020-01-02T01:00:00Z",
+      "updatedAt": "2020-01-02T01:00:00Z",
+      "dataQuality": "CURRENT",
+      "displayName": "Synthetic saved activity",
+      "input": {
+        "kind": "QUICK",
+        "clientEntryId": "22222222-2222-4222-8222-222222222222",
+        "period": {
+          "clientEntryId": "22222222-2222-4222-8222-222222222222",
+          "periodKind": "ACTIVITY",
+          "optionId": "201",
+          "durationMinutes": 20,
+          "equipmentDetails": {},
+          "movements": [],
+          "calculationFingerprint": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      },
+      "preview": {
+        "periods": [
+          {
+            "clientEntryId": "22222222-2222-4222-8222-222222222222",
+            "durationMinutes": 20,
+            "status": "AVAILABLE",
+            "estimatedKj": 488.133,
+            "calculationFingerprint": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "unavailableReason": null
+          }
+        ],
+        "totalMinutes": 20,
+        "knownEnergyKj": 488.133,
+        "partial": false,
+        "fingerprint": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "inputSignature": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "periodDetails": [
+        {
+          "clientEntryId": "22222222-2222-4222-8222-222222222222",
+          "optionId": "201",
+          "name": "Synthetic saved activity",
+          "selectableForNew": true,
+          "movements": []
+        }
+      ],
+      "periodCount": 1
+    }
+  },
+  {
+    "schema": "ExerciseRootV2",
+    "value": {
+      "id": "9",
+      "version": 0,
+      "recordDate": "2020-01-02",
+      "source": "IMAGE",
+      "createdAt": "2020-01-02T01:00:00Z",
+      "updatedAt": "2020-01-02T01:00:00Z",
+      "dataQuality": "LEGACY_UNVERIFIED",
+      "displayName": "Synthetic preserved activity",
+      "input": {
+        "kind": "QUICK",
+        "clientEntryId": "22222222-2222-4222-8222-222222222222",
+        "period": {
+          "clientEntryId": "22222222-2222-4222-8222-222222222222",
+          "referenceId": null,
+          "exerciseName": "Synthetic preserved activity",
+          "durationMinutes": 12.34,
+          "legacyIntensity": "HIGH",
+          "legacyEstimatedCalories": 123.456
+        }
+      },
+      "preview": {
+        "periods": [
+          {
+            "clientEntryId": "22222222-2222-4222-8222-222222222222",
+            "durationMinutes": 12.34,
+            "status": "LEGACY_UNVERIFIED",
+            "estimatedKj": null,
+            "calculationFingerprint": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "unavailableReason": "Preserved historical activity."
+          }
+        ],
+        "totalMinutes": 12.34,
+        "knownEnergyKj": null,
+        "partial": false,
+        "fingerprint": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "inputSignature": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "periodDetails": [
+        {
+          "clientEntryId": "22222222-2222-4222-8222-222222222222",
+          "optionId": null,
+          "name": "Synthetic preserved activity",
+          "selectableForNew": false,
+          "movements": []
+        }
+      ],
+      "periodCount": 1
+    }
+  }
+]

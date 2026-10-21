@@ -1,0 +1,31 @@
+{
+  "readSamples": [
+    {
+      "operation": "daily",
+      "elapsedMs": 28
+    },
+    {
+      "operation": "daily",
+      "elapsedMs": 15
+    },
+    {
+      "operation": "history",
+      "elapsedMs": 14
+    },
+    {
+      "operation": "history",
+      "elapsedMs": 18
+    },
+    {
+      "operation": "capabilities",
+      "elapsedMs": 19
+    },
+    {
+      "operation": "capabilities",
+      "elapsedMs": 20
+    }
+  ],
+  "environment": "local installed Chrome, real Spring/PG, no artificial network throttle, one sequential synthetic owner",
+  "journeyElapsedMs": 24210,
+  "savedNoticeGoneWithinMs": 2813
+}

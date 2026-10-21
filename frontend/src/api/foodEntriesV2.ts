@@ -1,0 +1,15 @@
+import {validateFoodRootRead} from './rootReadValidation'
+import {validateFoodPreviewV2} from './foodPreviewValidation'
+import type {FoodPreviewV2Request,FoodUpdateV2Request,FoodCorrectionPreviewV2Request} from './contracts'
+import {FoodPreviewV2Schema,FoodPreviewV2RequestSchema,FoodRootsV2Schema,FoodRootV2Schema,FoodUpdateV2RequestSchema,FoodCorrectionPreviewV2RequestSchema,IdSchema} from './schemas'
+import {apiGet,apiPost,apiPut,apiDelete} from './client'
+import {decodeResponse,UnexpectedApiResponse} from './validators'
+import {isValidRecordRange} from '../domain/dates'
+export async function previewFoodV2(payload:FoodPreviewV2Request,signal?:AbortSignal){const input=decodeResponse(FoodPreviewV2RequestSchema,payload),result=decodeResponse(FoodPreviewV2Schema,await apiPost('/v2/food/preview',input,{signal}));validateFoodPreviewV2(input,result);return result}
+export async function fetchFoodEntriesV2(from:string,to:string,page=0,signal?:AbortSignal){if(!isValidRecordRange(from,to)||!Number.isSafeInteger(page)||page<0||page>2147483647)throw new Error('Choose a date range of 1 to366 days.');const result=decodeResponse(FoodRootsV2Schema,await apiGet('/v2/food/entries',{params:{from,to,page,size:20},signal}));if(result.page!==page||result.size!==20||result.results.length>20)throw new UnexpectedApiResponse();result.results.forEach(validateFoodRootRead);return result}
+function rootPath(kind:'single'|'dish',id:string){decodeResponse(IdSchema,id);return `/v2/food/entries/${kind}/${encodeURIComponent(id)}`}
+export async function fetchFoodEntryV2(kind:'single'|'dish',id:string,signal?:AbortSignal){const result=decodeResponse(FoodRootV2Schema,await apiGet(rootPath(kind,id),{signal}));validateFoodRootRead(result);if(result.id!==id||result.input.kind.toLowerCase()!==kind)throw new UnexpectedApiResponse();return result}
+export async function fetchRecentFoodV2(signal?:AbortSignal){const result=decodeResponse(FoodRootsV2Schema,await apiGet('/v2/food/recent',{params:{limit:5},signal}));result.results.forEach(validateFoodRootRead);return result}
+export async function updateFoodEntryV2(kind:'single'|'dish',id:string,payload:FoodUpdateV2Request){const result=decodeResponse(FoodRootV2Schema,await apiPut(rootPath(kind,id),decodeResponse(FoodUpdateV2RequestSchema,payload)));validateFoodRootRead(result);if(result.id!==id||result.input.kind.toLowerCase()!==kind)throw new UnexpectedApiResponse();return result}
+export async function previewFoodCorrectionV2(kind:'single'|'dish',id:string,payload:FoodCorrectionPreviewV2Request,signal?:AbortSignal){const input=decodeResponse(FoodCorrectionPreviewV2RequestSchema,payload),result=decodeResponse(FoodPreviewV2Schema,signal?await apiPost(rootPath(kind,id)+'/preview',input,{signal}):await apiPost(rootPath(kind,id)+'/preview',input));validateFoodPreviewV2({entries:[input.entry]},result);return result}
+export async function deleteFoodEntryV2(kind:'single'|'dish',id:string,version:number){return apiDelete(rootPath(kind,id),{params:{expectedVersion:version}})}

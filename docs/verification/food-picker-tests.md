@@ -1,0 +1,9 @@
+# F07 — remote food reference selection
+
+Developer self-check PASS; independent review and UAT PENDING. No backend/database change. Reuses the Demo Autocomplete presentation and loads the real active, verified catalogue through the canonical transport and runtime decoder. Selected immutable reference metadata remains independent of result pages. Server matching is not filtered again by display labels. Sources display actual dataset name, release, revision and official HTTPS link.
+
+Tests were added first; the initial run failed because the implementation did not exist. Added `tests/contract/food-reference-api.test.ts` (2) and `tests/component/food-reference-picker.test.tsx` (4). Assertions cover canonical `query`/pagination/signal parameters, malformed and failed reads without seed fallback, reverse chicken/rice responses even if transport ignores cancellation, immediate stale-result hiding during debounce, owner/epoch/catalogue cache isolation, page changes preserving selection, server synonym matches and actual source labels, errors/retry and genuine empty results. The first implementation exposed a MUI 9 slot API mismatch; corrected it using the installed component types and reran the same tests.
+
+Actual commands: `npm --prefix frontend test` **109 passed / 0 failed**; targeted F07 **6 passed / 0 failed**; `npm --prefix frontend run typecheck:test`, `lint`, and `build` PASS. Existing backend regression remains Java 304 PASS; unchanged backend was not rerun for this UI component package. The picker is ready for F08 row integration; a full manual-entry browser flow is not yet complete or claimed.
+
+The upgraded local runtime was also checked through the real React login/profile UI: the existing synthetic account and dated 71.5 kg measurement remain intact. Screenshot: `screenshots/local-v8-profile-preserved.jpg`. No profile fields or measurements were changed during this check.

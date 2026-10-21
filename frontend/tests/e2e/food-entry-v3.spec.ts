@@ -1,0 +1,42 @@
+import { test, expect } from '@playwright/test';
+import { newOwner, beginFood, addFood, select, foodReview, confirmFood, foodRoots, history } from './v3-journeys';
+import { inspectOwnedSyntheticData } from './owned-db-verification.mjs';
+test('TUX food: real two-meal local Add,zero-write Review,one atomic confirmation and owned root correction', async ({ page }) => {
+    const identity = await newOwner(page, 'v3-food');
+    await beginFood(page);
+    await addFood(page);
+    await select(page, 'Default meal', 'Dinner');
+    await addFood(page, 'chicken', 'Chicken breast, lean, raw', '100');
+    expect(inspectOwnedSyntheticData(identity.email).foodRecords).toHaveLength(0);
+    await expect(page.getByLabel('Meal occasion 1', { exact: true })).toContainText('Lunch');
+    await foodReview(page);
+    expect(inspectOwnedSyntheticData(identity.email).receipts).toHaveLength(0);
+    expect(await page.getByRole('checkbox').count()).toBe(0);
+    let posts = 0;
+    page.on('request', r => {
+        if (r.method() === 'POST' && new URL(r.url()).pathname === '/api/v2/food/batches')
+            posts++;
+    });
+    const proof = await confirmFood(page, true);
+    expect(proof.roots).toHaveLength(2);
+    expect(proof.leaves).toHaveLength(2);
+    expect(posts).toBe(1);
+    const saved = inspectOwnedSyntheticData(identity.email);
+    expect(saved.foodRecords.map(r => [r.quantityGrams, r.energyKj, r.mealType])).toEqual([[150, 988.5, 'LUNCH'], [100, 412, 'DINNER']]);
+    expect(saved.receipts).toHaveLength(1);
+    await expect(page.getByLabel('Latest saved records')).toContainText('2020-01-02');
+    await expect(page.getByRole('heading', {name:'A little progress, every day.',exact:true})).toBeVisible();
+    await history(page);
+    await expect(page.locator('article.saved-entry-root')).toHaveCount(2);
+    const roots = await foodRoots(page), rice = roots.results.find(r => r.input.kind === 'SINGLE' && r.input.quantityGrams === 150)!;
+    await page.locator(`[data-record-id="single:${rice.id}"]`).getByRole('button', { name: /More actions for/ }).click(); await page.getByRole('menuitem', { name: 'Edit', exact: true }).click();
+    await expect(page.getByRole('heading', { name: 'Review your changes.', exact: true })).toBeVisible();
+    await page.getByLabel('Portion in grams 1', { exact: true }).fill('200');
+    await page.getByRole('button', { name: 'Confirm changes', exact: true }).click();
+    await expect(page).toHaveURL(/\/history\?/);
+    const after = inspectOwnedSyntheticData(identity.email);
+    expect(after.foodRecords[0]).toMatchObject({ quantityGrams: 200, energyKj: 1318, version: 1 });
+    expect(after.foodRecords[1]).toEqual(saved.foodRecords[1]);
+    expect(after.receipts).toEqual(saved.receipts);
+    await page.screenshot({ path: 'test-results/ux-v3/food-root-correction.png', fullPage: true });
+});

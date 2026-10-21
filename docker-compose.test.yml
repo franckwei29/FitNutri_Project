@@ -1,0 +1,20 @@
+# Dedicated test instance. This file never mounts the application database volume.
+services:
+  test-db:
+    image: postgres:16.15
+    container_name: ${TEST_DB_DOCKER_CONTAINER:-fitnutri-integration-team-tests}
+    environment:
+      POSTGRES_DB: fitnutri_integration_local
+      POSTGRES_USER: ${TEST_DB_USERNAME:-fitnutri_test}
+      POSTGRES_PASSWORD: ${TEST_DB_PASSWORD:?Set TEST_DB_PASSWORD privately}
+    ports:
+      - "127.0.0.1:${TEST_DB_PORT:-55433}:5432"
+    volumes:
+      - fitnutri-test-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  fitnutri-test-pgdata:

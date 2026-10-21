@@ -1,0 +1,26 @@
+cookies.txt
+admin_cookies.txt
+user_cookies.txt
+.vscode/
+food_test_cookies.txt
+
+# Local upstream source archives and protected database backups; never commit dumps or credentials.
+.local/reference-sources/
+.local/db-backups/
+
+# Private local E2E runtime artifacts; retain source/specs and reviewed screenshots separately.
+.local/e2e/
+frontend/test-results/
+frontend/playwright-report/
+
+# Immutable local executable copies; never package runtime artifacts into Git.
+.local/runtime/
+
+# Private workstation configuration and generated local state
+.DS_Store
+.idea/
+.env
+.env.*
+!.env.example
+!.env.test.example
+.local/

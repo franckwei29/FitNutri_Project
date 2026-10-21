@@ -1,0 +1,2365 @@
+{
+  "ok": true,
+  "sourceFiles": [
+    "frontend/src/App.tsx",
+    "frontend/src/api/admin.ts",
+    "frontend/src/api/auth.ts",
+    "frontend/src/api/capabilities.ts",
+    "frontend/src/api/client.ts",
+    "frontend/src/api/contracts.ts",
+    "frontend/src/api/csrf.ts",
+    "frontend/src/api/errors.ts",
+    "frontend/src/api/exerciseTypes.ts",
+    "frontend/src/api/foodPreview.ts",
+    "frontend/src/api/foodReference.ts",
+    "frontend/src/api/http.ts",
+    "frontend/src/api/profile.ts",
+    "frontend/src/api/recordMutations.ts",
+    "frontend/src/api/records.ts",
+    "frontend/src/api/schemas.ts",
+    "frontend/src/api/submissions.ts",
+    "frontend/src/api/summary.ts",
+    "frontend/src/api/validators.ts",
+    "frontend/src/api/weight.ts",
+    "frontend/src/app/DraftContext.ts",
+    "frontend/src/app/DraftProvider.tsx",
+    "frontend/src/app/NavigationSafetyContext.ts",
+    "frontend/src/app/RouteEntries.tsx",
+    "frontend/src/app/RouteStatus.tsx",
+    "frontend/src/app/SessionContext.ts",
+    "frontend/src/app/SessionProvider.tsx",
+    "frontend/src/app/providers.tsx",
+    "frontend/src/app/queryClient.ts",
+    "frontend/src/app/queryKeys.ts",
+    "frontend/src/app/router.tsx",
+    "frontend/src/app/sessionEpoch.ts",
+    "frontend/src/app/sessionRouting.ts",
+    "frontend/src/app/theme.ts",
+    "frontend/src/components/ChangedExerciseBasis.tsx",
+    "frontend/src/components/IntakeChart.tsx",
+    "frontend/src/components/MetricCard.tsx",
+    "frontend/src/components/NutrientTiles.tsx",
+    "frontend/src/components/PeriodStatistics.tsx",
+    "frontend/src/components/RecordCharts.tsx",
+    "frontend/src/components/RecordDeletionControl.tsx",
+    "frontend/src/components/RecordDetailsDialog.tsx",
+    "frontend/src/components/RecordEditControl.tsx",
+    "frontend/src/components/RecordList.tsx",
+    "frontend/src/components/RecordMutationBoundary.tsx",
+    "frontend/src/components/RuleSummary.tsx",
+    "frontend/src/components/SkipToMain.tsx",
+    "frontend/src/components/SourceNote.tsx",
+    "frontend/src/components/UnsavedChangesGuard.tsx",
+    "frontend/src/components/formHelpers.ts",
+    "frontend/src/components/presentation.tsx",
+    "frontend/src/domain/dates.ts",
+    "frontend/src/domain/inputRules.ts",
+    "frontend/src/domain/labels.ts",
+    "frontend/src/domain/trendSeries.ts",
+    "frontend/src/domain/units.ts",
+    "frontend/src/features/entry/CorrectionReviewPage.tsx",
+    "frontend/src/features/entry/ExerciseEditor.tsx",
+    "frontend/src/features/entry/FoodEditor.tsx",
+    "frontend/src/features/entry/FoodItemEditor.tsx",
+    "frontend/src/features/entry/FoodReferencePicker.tsx",
+    "frontend/src/features/entry/ReviewFoodRow.tsx",
+    "frontend/src/features/entry/ReviewPage.tsx",
+    "frontend/src/features/entry/SubmissionRecovery.tsx",
+    "frontend/src/features/entry/correctionIntent.ts",
+    "frontend/src/features/entry/draftReducer.ts",
+    "frontend/src/features/entry/draftTypes.ts",
+    "frontend/src/features/entry/draftValidation.ts",
+    "frontend/src/features/entry/previewIdentity.ts",
+    "frontend/src/features/entry/recordMutationState.ts",
+    "frontend/src/features/entry/recordMutationTypes.ts",
+    "frontend/src/features/entry/submissionPayload.ts",
+    "frontend/src/features/history/HistorySummary.tsx",
+    "frontend/src/features/history/PeriodTrends.tsx",
+    "frontend/src/features/history/historySearch.ts",
+    "frontend/src/features/profile/ProfileSections.tsx",
+    "frontend/src/features/profile/ProfileSettingsForm.tsx",
+    "frontend/src/features/profile/WeightEntryForm.tsx",
+    "frontend/src/features/profile/profileForm.ts",
+    "frontend/src/hooks/useBusinessToday.ts",
+    "frontend/src/hooks/useCapabilities.ts",
+    "frontend/src/hooks/useDraft.ts",
+    "frontend/src/hooks/useExerciseEstimate.ts",
+    "frontend/src/hooks/useFoodPreview.ts",
+    "frontend/src/hooks/useFoodSearch.ts",
+    "frontend/src/hooks/useNavigationSafety.ts",
+    "frontend/src/hooks/useRecordMutations.ts",
+    "frontend/src/hooks/useRecordQueries.ts",
+    "frontend/src/hooks/useSession.ts",
+    "frontend/src/hooks/useSubmitDraft.ts",
+    "frontend/src/hooks/useSummary.ts",
+    "frontend/src/hooks/useUnsavedChanges.ts",
+    "frontend/src/layouts/AppLayout.tsx",
+    "frontend/src/layouts/Header.tsx",
+    "frontend/src/layouts/ProtectedRoute.tsx",
+    "frontend/src/layouts/SessionBoundary.tsx",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AddRecordPage.tsx",
+    "frontend/src/pages/AdminPage.tsx",
+    "frontend/src/pages/AuthPage.tsx",
+    "frontend/src/pages/DashboardPage.tsx",
+    "frontend/src/pages/EntryPage.tsx",
+    "frontend/src/pages/HistoryPage.tsx",
+    "frontend/src/pages/OnboardingPage.tsx",
+    "frontend/src/pages/ProfilePage.tsx"
+  ],
+  "edges": [
+    {
+      "from": "frontend/src/main.tsx",
+      "to": "frontend/src/app/providers.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/providers.tsx",
+      "to": "frontend/src/app/queryClient.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/providers.tsx",
+      "to": "frontend/src/app/SessionProvider.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/SessionProvider.tsx",
+      "to": "frontend/src/api/auth.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/auth.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/auth.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/client.ts",
+      "to": "frontend/src/api/http.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/client.ts",
+      "to": "frontend/src/api/csrf.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/csrf.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/csrf.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/schemas.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/csrf.ts",
+      "to": "frontend/src/api/http.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/csrf.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/csrf.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/errors.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/errors.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/client.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/auth.ts",
+      "to": "frontend/src/api/csrf.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/auth.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/auth.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/SessionProvider.tsx",
+      "to": "frontend/src/api/profile.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/profile.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/profile.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/profile.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/profile.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/profile.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/SessionProvider.tsx",
+      "to": "frontend/src/api/csrf.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/SessionProvider.tsx",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/SessionProvider.tsx",
+      "to": "frontend/src/app/sessionEpoch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/sessionEpoch.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/sessionEpoch.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/sessionEpoch.ts",
+      "to": "frontend/src/app/queryKeys.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/queryKeys.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/queryKeys.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/SessionProvider.tsx",
+      "to": "frontend/src/app/SessionContext.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/SessionContext.ts",
+      "to": "frontend/src/app/sessionEpoch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/SessionProvider.tsx",
+      "to": "frontend/src/app/DraftProvider.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/DraftProvider.tsx",
+      "to": "frontend/src/app/DraftContext.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/DraftContext.ts",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftTypes.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftTypes.ts",
+      "to": "frontend/src/features/entry/recordMutationTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/recordMutationTypes.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/recordMutationTypes.ts",
+      "to": "frontend/src/features/entry/correctionIntent.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/correctionIntent.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/correctionIntent.ts",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/correctionIntent.ts",
+      "to": "frontend/src/features/entry/draftValidation.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftValidation.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftValidation.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftValidation.ts",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftValidation.ts",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/correctionIntent.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/correctionIntent.ts",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/correctionIntent.ts",
+      "to": "frontend/src/features/history/historySearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/historySearch.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/DraftContext.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/DraftProvider.tsx",
+      "to": "frontend/src/features/entry/draftReducer.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftReducer.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftReducer.ts",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftReducer.ts",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/draftReducer.ts",
+      "to": "frontend/src/features/entry/recordMutationState.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/recordMutationState.ts",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/recordMutationState.ts",
+      "to": "frontend/src/features/entry/recordMutationTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/recordMutationState.ts",
+      "to": "frontend/src/features/entry/recordMutationTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/recordMutationState.ts",
+      "to": "frontend/src/features/entry/correctionIntent.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/recordMutationState.ts",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/recordMutationState.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/DraftProvider.tsx",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/DraftProvider.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/providers.tsx",
+      "to": "frontend/src/app/theme.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/main.tsx",
+      "to": "frontend/src/App.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/App.tsx",
+      "to": "frontend/src/app/router.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/layouts/AppLayout.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/AppLayout.tsx",
+      "to": "frontend/src/components/SkipToMain.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/AppLayout.tsx",
+      "to": "frontend/src/layouts/Header.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/Header.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/Header.tsx",
+      "to": "frontend/src/components/formHelpers.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/Header.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSession.ts",
+      "to": "frontend/src/app/SessionContext.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/Header.tsx",
+      "to": "frontend/src/hooks/useNavigationSafety.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useNavigationSafety.ts",
+      "to": "frontend/src/app/NavigationSafetyContext.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/NavigationSafetyContext.ts",
+      "to": "frontend/src/hooks/useUnsavedChanges.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/Header.tsx",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useDraft.ts",
+      "to": "frontend/src/app/DraftContext.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/Header.tsx",
+      "to": "frontend/src/features/entry/recordMutationState.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/AppLayout.tsx",
+      "to": "frontend/src/components/UnsavedChangesGuard.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/UnsavedChangesGuard.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/UnsavedChangesGuard.tsx",
+      "to": "frontend/src/hooks/useUnsavedChanges.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/UnsavedChangesGuard.tsx",
+      "to": "frontend/src/hooks/useUnsavedChanges.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/AppLayout.tsx",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/AppLayout.tsx",
+      "to": "frontend/src/app/NavigationSafetyContext.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/AppLayout.tsx",
+      "to": "frontend/src/app/NavigationSafetyContext.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/AppLayout.tsx",
+      "to": "frontend/src/features/entry/recordMutationState.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/AppLayout.tsx",
+      "to": "frontend/src/components/RecordMutationBoundary.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordMutationBoundary.tsx",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordMutationBoundary.tsx",
+      "to": "frontend/src/hooks/useRecordMutations.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/api/recordMutations.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/recordMutations.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/recordMutations.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/recordMutations.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/recordMutations.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/recordMutations.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/api/records.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/records.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/records.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/records.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/records.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/records.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/features/entry/correctionIntent.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/features/entry/correctionIntent.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/features/entry/recordMutationTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/features/entry/recordMutationTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordMutations.ts",
+      "to": "frontend/src/app/queryKeys.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/layouts/ProtectedRoute.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/ProtectedRoute.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/ProtectedRoute.tsx",
+      "to": "frontend/src/app/sessionRouting.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/sessionRouting.ts",
+      "to": "frontend/src/app/sessionEpoch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/ProtectedRoute.tsx",
+      "to": "frontend/src/layouts/SessionBoundary.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/SessionBoundary.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/layouts/SessionBoundary.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/app/RouteEntries.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/RouteEntries.tsx",
+      "to": "frontend/src/app/RouteStatus.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/RouteEntries.tsx",
+      "to": "frontend/src/pages/AuthPage.tsx",
+      "kind": "dynamic"
+    },
+    {
+      "from": "frontend/src/pages/AuthPage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AuthPage.tsx",
+      "to": "frontend/src/components/formHelpers.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AuthPage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AuthPage.tsx",
+      "to": "frontend/src/api/auth.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/RouteEntries.tsx",
+      "to": "frontend/src/layouts/SessionBoundary.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/RouteEntries.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/RouteEntries.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/RouteEntries.tsx",
+      "to": "frontend/src/app/sessionRouting.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/app/RouteStatus.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/pages/OnboardingPage.tsx",
+      "kind": "dynamic"
+    },
+    {
+      "from": "frontend/src/pages/OnboardingPage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/OnboardingPage.tsx",
+      "to": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/api/profile.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/components/formHelpers.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/domain/labels.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/domain/labels.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/hooks/useNavigationSafety.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/features/profile/ProfileSections.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSections.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSections.tsx",
+      "to": "frontend/src/domain/labels.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSections.tsx",
+      "to": "frontend/src/features/profile/profileForm.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/profileForm.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/profileForm.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSections.tsx",
+      "to": "frontend/src/features/profile/profileForm.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/features/profile/profileForm.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "to": "frontend/src/features/profile/profileForm.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/OnboardingPage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/pages/ProfilePage.tsx",
+      "kind": "dynamic"
+    },
+    {
+      "from": "frontend/src/pages/ProfilePage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/ProfilePage.tsx",
+      "to": "frontend/src/features/profile/ProfileSettingsForm.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/ProfilePage.tsx",
+      "to": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "to": "frontend/src/api/weight.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/weight.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/weight.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/weight.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/weight.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/weight.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/weight.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "to": "frontend/src/components/formHelpers.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "to": "frontend/src/app/queryKeys.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/profile/WeightEntryForm.tsx",
+      "to": "frontend/src/hooks/useNavigationSafety.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/ProfilePage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/pages/AddRecordPage.tsx",
+      "kind": "dynamic"
+    },
+    {
+      "from": "frontend/src/pages/AddRecordPage.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AddRecordPage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AddRecordPage.tsx",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AddRecordPage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AddRecordPage.tsx",
+      "to": "frontend/src/hooks/useCapabilities.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useCapabilities.ts",
+      "to": "frontend/src/api/capabilities.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/capabilities.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/capabilities.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/capabilities.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/capabilities.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useCapabilities.ts",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AddRecordPage.tsx",
+      "to": "frontend/src/features/entry/draftReducer.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AddRecordPage.tsx",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AddRecordPage.tsx",
+      "to": "frontend/src/features/entry/recordMutationState.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/pages/EntryPage.tsx",
+      "kind": "dynamic"
+    },
+    {
+      "from": "frontend/src/pages/EntryPage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/EntryPage.tsx",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/EntryPage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/EntryPage.tsx",
+      "to": "frontend/src/hooks/useCapabilities.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/EntryPage.tsx",
+      "to": "frontend/src/features/entry/FoodEditor.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/hooks/useFoodSearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useFoodSearch.ts",
+      "to": "frontend/src/api/foodReference.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/foodReference.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/foodReference.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/foodReference.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/foodReference.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useFoodSearch.ts",
+      "to": "frontend/src/app/queryKeys.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/features/entry/draftReducer.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/features/entry/draftValidation.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/hooks/useFoodSearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/hooks/useFoodPreview.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useFoodPreview.ts",
+      "to": "frontend/src/api/foodPreview.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/foodPreview.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/foodPreview.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/foodPreview.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/foodPreview.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useFoodPreview.ts",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useFoodPreview.ts",
+      "to": "frontend/src/hooks/useFoodSearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/domain/labels.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/features/entry/FoodReferencePicker.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodReferencePicker.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodReferencePicker.tsx",
+      "to": "frontend/src/hooks/useFoodSearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodReferencePicker.tsx",
+      "to": "frontend/src/hooks/useFoodSearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodReferencePicker.tsx",
+      "to": "frontend/src/components/SourceNote.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/SourceNote.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/components/NutrientTiles.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/NutrientTiles.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/NutrientTiles.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/domain/units.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "to": "frontend/src/features/entry/previewIdentity.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/previewIdentity.ts",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/previewIdentity.ts",
+      "to": "frontend/src/hooks/useFoodSearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/previewIdentity.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/previewIdentity.ts",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/features/entry/previewIdentity.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/FoodEditor.tsx",
+      "to": "frontend/src/features/entry/correctionIntent.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/EntryPage.tsx",
+      "to": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/hooks/useFoodSearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/api/exerciseTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/exerciseTypes.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/exerciseTypes.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/exerciseTypes.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/exerciseTypes.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/exerciseTypes.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/hooks/useExerciseEstimate.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useExerciseEstimate.ts",
+      "to": "frontend/src/api/exerciseTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useExerciseEstimate.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useExerciseEstimate.ts",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useExerciseEstimate.ts",
+      "to": "frontend/src/hooks/useFoodSearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/components/SourceNote.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ExerciseEditor.tsx",
+      "to": "frontend/src/features/entry/correctionIntent.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/EntryPage.tsx",
+      "to": "frontend/src/features/entry/ReviewPage.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/hooks/useCapabilities.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/hooks/useSubmitDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSubmitDraft.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSubmitDraft.ts",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSubmitDraft.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSubmitDraft.ts",
+      "to": "frontend/src/api/submissions.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/submissions.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/submissions.ts",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/submissions.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/submissions.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/submissions.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/submissions.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSubmitDraft.ts",
+      "to": "frontend/src/features/entry/draftReducer.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSubmitDraft.ts",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSubmitDraft.ts",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/hooks/useExerciseEstimate.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "to": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "to": "frontend/src/hooks/useFoodSearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "to": "frontend/src/hooks/useFoodPreview.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "to": "frontend/src/features/entry/previewIdentity.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "to": "frontend/src/domain/labels.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "to": "frontend/src/components/NutrientTiles.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "to": "frontend/src/components/SourceNote.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/features/entry/SubmissionRecovery.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/features/entry/submissionPayload.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/submissionPayload.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/submissionPayload.ts",
+      "to": "frontend/src/features/entry/draftTypes.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/submissionPayload.ts",
+      "to": "frontend/src/features/entry/draftValidation.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/submissionPayload.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/submissionPayload.ts",
+      "to": "frontend/src/domain/inputRules.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/features/entry/draftValidation.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/features/entry/previewIdentity.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/domain/labels.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/components/SourceNote.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/features/history/historySearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/api/records.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/hooks/useCapabilities.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/hooks/useRecordMutations.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/hooks/useExerciseEstimate.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/features/entry/recordMutationState.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/features/entry/correctionIntent.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/features/entry/draftValidation.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/features/entry/ReviewFoodRow.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/features/entry/FoodItemEditor.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/features/entry/previewIdentity.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/features/history/historySearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/domain/labels.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/components/SourceNote.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/CorrectionReviewPage.tsx",
+      "to": "frontend/src/components/ChangedExerciseBasis.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/ChangedExerciseBasis.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/ChangedExerciseBasis.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/entry/ReviewPage.tsx",
+      "to": "frontend/src/components/ChangedExerciseBasis.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/EntryPage.tsx",
+      "to": "frontend/src/features/entry/recordMutationState.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/features/entry/ReviewPage.tsx",
+      "kind": "dynamic"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/pages/DashboardPage.tsx",
+      "kind": "dynamic"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/hooks/useBusinessToday.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useBusinessToday.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/hooks/useSummary.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSummary.ts",
+      "to": "frontend/src/api/summary.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/summary.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/summary.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/summary.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/summary.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/summary.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSummary.ts",
+      "to": "frontend/src/app/queryKeys.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSummary.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useSummary.ts",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/hooks/useRecordQueries.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordQueries.ts",
+      "to": "frontend/src/api/records.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordQueries.ts",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordQueries.ts",
+      "to": "frontend/src/app/queryKeys.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordQueries.ts",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/hooks/useRecordQueries.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/components/MetricCard.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/MetricCard.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/MetricCard.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/components/RecordList.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordList.tsx",
+      "to": "frontend/src/features/history/historySearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordList.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordList.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordList.tsx",
+      "to": "frontend/src/domain/labels.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/DashboardPage.tsx",
+      "to": "frontend/src/components/IntakeChart.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/IntakeChart.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/IntakeChart.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/pages/HistoryPage.tsx",
+      "kind": "dynamic"
+    },
+    {
+      "from": "frontend/src/pages/HistoryPage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/HistoryPage.tsx",
+      "to": "frontend/src/components/RecordList.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/HistoryPage.tsx",
+      "to": "frontend/src/components/RecordDetailsDialog.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/features/history/historySearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/api/records.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/domain/labels.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/components/NutrientTiles.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/components/SourceNote.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/components/RecordDeletionControl.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDeletionControl.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDeletionControl.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDeletionControl.tsx",
+      "to": "frontend/src/hooks/useRecordMutations.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDeletionControl.tsx",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDeletionControl.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDeletionControl.tsx",
+      "to": "frontend/src/features/entry/recordMutationState.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/app/queryKeys.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordDetailsDialog.tsx",
+      "to": "frontend/src/components/RecordEditControl.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordEditControl.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordEditControl.tsx",
+      "to": "frontend/src/api/records.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordEditControl.tsx",
+      "to": "frontend/src/features/entry/correctionIntent.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordEditControl.tsx",
+      "to": "frontend/src/features/entry/recordMutationState.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordEditControl.tsx",
+      "to": "frontend/src/hooks/useDraft.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordEditControl.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordEditControl.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/HistoryPage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/HistoryPage.tsx",
+      "to": "frontend/src/hooks/useBusinessToday.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/HistoryPage.tsx",
+      "to": "frontend/src/hooks/useRecordQueries.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/HistoryPage.tsx",
+      "to": "frontend/src/features/history/historySearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/HistoryPage.tsx",
+      "to": "frontend/src/features/history/HistorySummary.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/HistorySummary.tsx",
+      "to": "frontend/src/api/summary.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/HistorySummary.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/HistorySummary.tsx",
+      "to": "frontend/src/hooks/useSummary.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/HistorySummary.tsx",
+      "to": "frontend/src/features/history/historySearch.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/HistorySummary.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/HistorySummary.tsx",
+      "to": "frontend/src/components/MetricCard.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/HistorySummary.tsx",
+      "to": "frontend/src/components/RuleSummary.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RuleSummary.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/HistorySummary.tsx",
+      "to": "frontend/src/app/queryKeys.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/HistorySummary.tsx",
+      "to": "frontend/src/features/history/PeriodTrends.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/PeriodTrends.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/PeriodTrends.tsx",
+      "to": "frontend/src/api/weight.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/PeriodTrends.tsx",
+      "to": "frontend/src/app/queryKeys.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/PeriodTrends.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/PeriodTrends.tsx",
+      "to": "frontend/src/components/RecordCharts.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordCharts.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordCharts.tsx",
+      "to": "frontend/src/domain/trendSeries.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/domain/trendSeries.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/domain/trendSeries.ts",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/RecordCharts.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/PeriodTrends.tsx",
+      "to": "frontend/src/components/PeriodStatistics.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/PeriodStatistics.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/components/PeriodStatistics.tsx",
+      "to": "frontend/src/domain/units.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/PeriodTrends.tsx",
+      "to": "frontend/src/components/RuleSummary.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/features/history/PeriodTrends.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/HistoryPage.tsx",
+      "to": "frontend/src/domain/dates.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/app/router.tsx",
+      "to": "frontend/src/pages/AdminPage.tsx",
+      "kind": "dynamic"
+    },
+    {
+      "from": "frontend/src/pages/AdminPage.tsx",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AdminPage.tsx",
+      "to": "frontend/src/api/admin.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/admin.ts",
+      "to": "frontend/src/api/contracts.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/admin.ts",
+      "to": "frontend/src/api/schemas.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/admin.ts",
+      "to": "frontend/src/api/client.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/admin.ts",
+      "to": "frontend/src/api/validators.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/api/admin.ts",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AdminPage.tsx",
+      "to": "frontend/src/api/errors.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AdminPage.tsx",
+      "to": "frontend/src/components/presentation.tsx",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AdminPage.tsx",
+      "to": "frontend/src/components/formHelpers.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AdminPage.tsx",
+      "to": "frontend/src/hooks/useSession.ts",
+      "kind": "static"
+    },
+    {
+      "from": "frontend/src/pages/AdminPage.tsx",
+      "to": "frontend/src/hooks/useNavigationSafety.ts",
+      "kind": "static"
+    }
+  ],
+  "manifestEntries": 27,
+  "artifacts": [
+    "frontend/dist/.vite/manifest.json",
+    "frontend/dist/assets/AddRecordPage-BtuxVf1G.js",
+    "frontend/dist/assets/AdminPage-D6lCSDkv.js",
+    "frontend/dist/assets/ArrowForward-11sycb2G.js",
+    "frontend/dist/assets/AuthPage-CZQxmc6O.js",
+    "frontend/dist/assets/Check-t1AcznQj.js",
+    "frontend/dist/assets/Chip-0FKHLDNx.js",
+    "frontend/dist/assets/DashboardPage-D0M-U6ia.js",
+    "frontend/dist/assets/DirectionsRun-DKnOKI1P.js",
+    "frontend/dist/assets/EditOutlined-DGlRuH5K.js",
+    "frontend/dist/assets/EntryPage-BMH8yhu7.js",
+    "frontend/dist/assets/FormControlLabel-_Av_yqiX.js",
+    "frontend/dist/assets/HistoryPage-C5QP1Pmd.js",
+    "frontend/dist/assets/LockOutlined-BLL1Ryxr.js",
+    "frontend/dist/assets/OnboardingPage-DmeQ1aju.js",
+    "frontend/dist/assets/ProfilePage-7TX5ZXuH.js",
+    "frontend/dist/assets/ProfileSettingsForm-CXP0p_F6.js",
+    "frontend/dist/assets/RecordList-62Wsym4u.js",
+    "frontend/dist/assets/RestaurantOutlined-CcBS5vg2.js",
+    "frontend/dist/assets/ReviewPage-D3kWSnat.js",
+    "frontend/dist/assets/SourceNote-BH22NKBK.js",
+    "frontend/dist/assets/index-BfZuo_2a.js",
+    "frontend/dist/assets/labels-nO1xE6C2.js",
+    "frontend/dist/assets/units-MuOr-ddT.js",
+    "frontend/dist/assets/useCapabilities-CHf1hqTm.js",
+    "frontend/dist/assets/useQuery-Ca-sp8hM.js",
+    "frontend/dist/assets/useSession-B6L8Q9Ip.js",
+    "frontend/dist/assets/weight-DkH_2P56.js",
+    "frontend/dist/index.html"
+  ],
+  "issues": []
+}

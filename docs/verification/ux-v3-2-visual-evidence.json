@@ -1,0 +1,37 @@
+{
+  "scope": "Synthetic only. 360/1440 toast screenshots opened; measured five widths. Genuine Chrome 200 percent zoom verified by innerWidth640/outerWidth1280/devicePixelRatio2/CSSzoom1 and actions. actual-zoom200.png is a partial viewport capture diagnostic; actual-zoom200-layout.png was captured at scrollY0. Neither replaces user visual UAT. CSS200 and actual browser zoom reported separately.",
+  "screenshots": [
+    {
+      "file": "actual-zoom200-layout.png",
+      "sha256": "a2433f9ed7297c37fe1848b7af15e8ef8e7263a7403cfce287237425c36d1879"
+    },
+    {
+      "file": "actual-zoom200.png",
+      "sha256": "f61548417a304fec43d6d3cf877f7990213b6657d56622e95521f2761eebb65d"
+    },
+    {
+      "file": "dashboard-1440.png",
+      "sha256": "4f8e9884b0a6d943328a37f60a1489028ec1e77992f14184477ac281db97a9a5"
+    },
+    {
+      "file": "v32-center-1280.png",
+      "sha256": "5a344d4b8403d1913f1ac4e63c9c25ce1c4e50c360b634c00b564bc63d89b474"
+    },
+    {
+      "file": "v32-center-1440.png",
+      "sha256": "eb9d3c37d49ea822fbd2ea968f365eff567138db946df3263d167603b8394d98"
+    },
+    {
+      "file": "v32-center-360.png",
+      "sha256": "ca18a107004e9cf137b1373e44be97344f0ab539fa372b8c31d0cb08781dcbbc"
+    },
+    {
+      "file": "v32-center-375.png",
+      "sha256": "591ae74f73723e763a1a6d63d6bfc963f44fb11567b5a7af57ad89121884f016"
+    },
+    {
+      "file": "v32-center-768.png",
+      "sha256": "e6623bd71ad164ca0e208734336a81aac8dae72c9a99002d423e495849d5a1ff"
+    }
+  ]
+}

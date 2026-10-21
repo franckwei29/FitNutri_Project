@@ -1,0 +1,1688 @@
+{
+  "format": "fitnutri.food-search-metadata.v1",
+  "metadataRevision": "ux-food-r1",
+  "dataset": {
+    "name": "AUSNUT",
+    "release": "2023",
+    "revision": "2026-03-details_2025-09-nutrients-r1",
+    "recordsSha256": "933e5ef6bf362a9f2bc3217097a8116ad45d890d06d9d303b184025e1d04d1bd"
+  },
+  "entries": [
+    {
+      "publicFoodKey": "F007661",
+      "shortNameEn": "White rice, cooked",
+      "shortNameZh": "白米饭",
+      "conceptKey": "rice",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "rice"
+        },
+        {
+          "locale": "en",
+          "value": "white rice"
+        },
+        {
+          "locale": "zh",
+          "value": "米饭"
+        },
+        {
+          "locale": "zh",
+          "value": "白米饭"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "type": "WHITE"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Rice, white, cooked"
+      }
+    },
+    {
+      "publicFoodKey": "F007682",
+      "shortNameEn": "White rice, uncooked",
+      "shortNameZh": "生白米",
+      "conceptKey": "rice",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "rice"
+        },
+        {
+          "locale": "en",
+          "value": "white rice"
+        },
+        {
+          "locale": "en",
+          "value": "uncooked rice"
+        },
+        {
+          "locale": "zh",
+          "value": "白米"
+        },
+        {
+          "locale": "zh",
+          "value": "生米"
+        }
+      ],
+      "facets": {
+        "state": "RAW",
+        "type": "WHITE"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Rice, white, uncooked"
+      }
+    },
+    {
+      "publicFoodKey": "F007641",
+      "shortNameEn": "Brown rice, cooked",
+      "shortNameZh": "糙米饭",
+      "conceptKey": "rice",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "rice"
+        },
+        {
+          "locale": "en",
+          "value": "brown rice"
+        },
+        {
+          "locale": "zh",
+          "value": "米饭"
+        },
+        {
+          "locale": "zh",
+          "value": "糙米饭"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "type": "BROWN"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Rice, brown, cooked"
+      }
+    },
+    {
+      "publicFoodKey": "F007648",
+      "shortNameEn": "Brown rice, uncooked",
+      "shortNameZh": "生糙米",
+      "conceptKey": "rice",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "rice"
+        },
+        {
+          "locale": "en",
+          "value": "brown rice"
+        },
+        {
+          "locale": "en",
+          "value": "uncooked rice"
+        },
+        {
+          "locale": "zh",
+          "value": "糙米"
+        },
+        {
+          "locale": "zh",
+          "value": "生米"
+        }
+      ],
+      "facets": {
+        "state": "RAW",
+        "type": "BROWN"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Rice, brown, uncooked"
+      }
+    },
+    {
+      "publicFoodKey": "F006038",
+      "shortNameEn": "Rice noodles, boiled and drained",
+      "shortNameZh": "煮米粉",
+      "conceptKey": "noodles",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "noodles"
+        },
+        {
+          "locale": "en",
+          "value": "rice noodles"
+        },
+        {
+          "locale": "zh",
+          "value": "米粉"
+        },
+        {
+          "locale": "zh",
+          "value": "面条"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "cookingMethod": "BOILED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Noodle, rice stick, boiled, drained"
+      }
+    },
+    {
+      "publicFoodKey": "F006048",
+      "shortNameEn": "Wheat noodles, Asian style, cooked",
+      "shortNameZh": "熟小麦面条",
+      "conceptKey": "noodles",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "noodles"
+        },
+        {
+          "locale": "en",
+          "value": "wheat noodles"
+        },
+        {
+          "locale": "zh",
+          "value": "面条"
+        },
+        {
+          "locale": "zh",
+          "value": "小麦面"
+        }
+      ],
+      "facets": {
+        "state": "COOKED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Noodle, wheat, Asian style, cooked"
+      }
+    },
+    {
+      "publicFoodKey": "F003716",
+      "shortNameEn": "Fried whole egg, added fat",
+      "shortNameZh": "煎鸡蛋（加油）",
+      "conceptKey": "egg",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "egg"
+        },
+        {
+          "locale": "en",
+          "value": "fried egg"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡蛋"
+        },
+        {
+          "locale": "zh",
+          "value": "煎蛋"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "cookingMethod": "FRIED",
+        "addedFat": "YES"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Egg, chicken, whole, fried, added fat"
+      }
+    },
+    {
+      "publicFoodKey": "F003718",
+      "shortNameEn": "Fried whole egg, no fat added",
+      "shortNameZh": "煎鸡蛋（未加油）",
+      "conceptKey": "egg",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "egg"
+        },
+        {
+          "locale": "en",
+          "value": "fried egg"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡蛋"
+        },
+        {
+          "locale": "zh",
+          "value": "煎蛋"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "cookingMethod": "FRIED",
+        "addedFat": "NO"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Egg, chicken, whole, fried, no fat added"
+      }
+    },
+    {
+      "publicFoodKey": "F003721",
+      "shortNameEn": "Whole chicken egg, hard-boiled",
+      "shortNameZh": "水煮鸡蛋",
+      "conceptKey": "egg",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "egg"
+        },
+        {
+          "locale": "en",
+          "value": "boiled egg"
+        },
+        {
+          "locale": "en",
+          "value": "hard boiled egg"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡蛋"
+        },
+        {
+          "locale": "zh",
+          "value": "水煮蛋"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "cookingMethod": "BOILED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Egg, chicken, whole, hard-boiled"
+      }
+    },
+    {
+      "publicFoodKey": "F002594",
+      "shortNameEn": "Chicken breast, lean, raw",
+      "shortNameZh": "生去皮鸡胸肉",
+      "conceptKey": "chicken",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "chicken"
+        },
+        {
+          "locale": "en",
+          "value": "chicken breast"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡肉"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡胸肉"
+        }
+      ],
+      "facets": {
+        "state": "RAW",
+        "part": "BREAST"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Chicken, breast, lean, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F002592",
+      "shortNameEn": "Lean chicken breast, dry-heat methods, no added fat",
+      "shortNameZh": null,
+      "conceptKey": "chicken",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "chicken"
+        },
+        {
+          "locale": "en",
+          "value": "chicken breast"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡肉"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡胸肉"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "part": "BREAST",
+        "addedFat": "NO"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Chicken, breast, lean, baked, roasted, fried, grilled or BBQ'd, no added fat"
+      }
+    },
+    {
+      "publicFoodKey": "F002575",
+      "shortNameEn": "Lean chicken breast, dry-heat methods, added fat",
+      "shortNameZh": null,
+      "conceptKey": "chicken",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "chicken"
+        },
+        {
+          "locale": "en",
+          "value": "chicken breast"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡肉"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡胸肉"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "part": "BREAST",
+        "addedFat": "YES"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Chicken, breast, lean, baked, roasted, fried, grilled or BBQ'd, added fat"
+      }
+    },
+    {
+      "publicFoodKey": "F002806",
+      "shortNameEn": "Chicken thigh, lean, raw",
+      "shortNameZh": "生去皮鸡腿肉",
+      "conceptKey": "chicken",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "chicken"
+        },
+        {
+          "locale": "en",
+          "value": "chicken thigh"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡肉"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡腿肉"
+        }
+      ],
+      "facets": {
+        "state": "RAW",
+        "part": "THIGH"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Chicken, thigh, lean, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F002804",
+      "shortNameEn": "Lean chicken thigh, dry-heat methods, no added fat",
+      "shortNameZh": null,
+      "conceptKey": "chicken",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "chicken"
+        },
+        {
+          "locale": "en",
+          "value": "chicken thigh"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡肉"
+        },
+        {
+          "locale": "zh",
+          "value": "鸡腿肉"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "part": "THIGH",
+        "addedFat": "NO"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Chicken, thigh, lean, baked, roasted, fried, grilled or BBQ'd, no added fat"
+      }
+    },
+    {
+      "publicFoodKey": "F000504",
+      "shortNameEn": "Lean beef strips, raw",
+      "shortNameZh": "生瘦牛肉条",
+      "conceptKey": "beef",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "beef"
+        },
+        {
+          "locale": "en",
+          "value": "beef strips"
+        },
+        {
+          "locale": "zh",
+          "value": "牛肉"
+        },
+        {
+          "locale": "zh",
+          "value": "牛肉条"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Beef, diced/stir-fry strips, lean, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F000505",
+      "shortNameEn": "Lean beef strips, cooked",
+      "shortNameZh": "熟瘦牛肉条",
+      "conceptKey": "beef",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "beef"
+        },
+        {
+          "locale": "en",
+          "value": "beef strips"
+        },
+        {
+          "locale": "zh",
+          "value": "牛肉"
+        },
+        {
+          "locale": "zh",
+          "value": "牛肉条"
+        }
+      ],
+      "facets": {
+        "state": "COOKED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Beef, diced/stir-fry strips, lean, cooked"
+      }
+    },
+    {
+      "publicFoodKey": "F007019",
+      "shortNameEn": "Lean pork chop, raw",
+      "shortNameZh": "生瘦猪排",
+      "conceptKey": "pork",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "pork"
+        },
+        {
+          "locale": "en",
+          "value": "pork chop"
+        },
+        {
+          "locale": "zh",
+          "value": "猪肉"
+        },
+        {
+          "locale": "zh",
+          "value": "猪排"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Pork, chop, lean, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F007017",
+      "shortNameEn": "Lean pork chop, dry-heat methods, no added fat",
+      "shortNameZh": null,
+      "conceptKey": "pork",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "pork"
+        },
+        {
+          "locale": "en",
+          "value": "pork chop"
+        },
+        {
+          "locale": "zh",
+          "value": "猪肉"
+        },
+        {
+          "locale": "zh",
+          "value": "猪排"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "addedFat": "NO"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Pork, chop, lean, baked, roasted, fried, grilled or BBQ'd, no added fat"
+      }
+    },
+    {
+      "publicFoodKey": "F007827",
+      "shortNameEn": "Atlantic salmon, raw",
+      "shortNameZh": "生大西洋三文鱼",
+      "conceptKey": "fish",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "fish"
+        },
+        {
+          "locale": "en",
+          "value": "salmon"
+        },
+        {
+          "locale": "en",
+          "value": "atlantic salmon"
+        },
+        {
+          "locale": "zh",
+          "value": "鱼"
+        },
+        {
+          "locale": "zh",
+          "value": "三文鱼"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Salmon, Atlantic, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F007834",
+      "shortNameEn": "Salmon, dry-heat methods, no added fat",
+      "shortNameZh": null,
+      "conceptKey": "fish",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "fish"
+        },
+        {
+          "locale": "en",
+          "value": "salmon"
+        },
+        {
+          "locale": "zh",
+          "value": "鱼"
+        },
+        {
+          "locale": "zh",
+          "value": "三文鱼"
+        }
+      ],
+      "facets": {
+        "state": "COOKED",
+        "addedFat": "NO"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Salmon, baked, roasted, fried, grilled or BBQ'd, no added fat"
+      }
+    },
+    {
+      "publicFoodKey": "F007421",
+      "shortNameEn": "Banana prawn flesh, farmed, purchased cooked",
+      "shortNameZh": null,
+      "conceptKey": "prawn",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "prawn"
+        },
+        {
+          "locale": "en",
+          "value": "shrimp"
+        },
+        {
+          "locale": "zh",
+          "value": "虾"
+        },
+        {
+          "locale": "zh",
+          "value": "熟虾"
+        }
+      ],
+      "facets": {
+        "state": "COOKED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Prawn, banana, aquacultured, flesh, purchased cooked"
+      }
+    },
+    {
+      "publicFoodKey": "F007422",
+      "shortNameEn": "Banana prawn flesh, wild, raw",
+      "shortNameZh": null,
+      "conceptKey": "prawn",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "prawn"
+        },
+        {
+          "locale": "en",
+          "value": "shrimp"
+        },
+        {
+          "locale": "zh",
+          "value": "虾"
+        },
+        {
+          "locale": "zh",
+          "value": "生虾"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Prawn, banana, wild, flesh, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F005634",
+      "shortNameEn": "Cow milk, regular fat (~3.5%)",
+      "shortNameZh": "全脂牛奶",
+      "conceptKey": "milk",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "milk"
+        },
+        {
+          "locale": "en",
+          "value": "cow milk"
+        },
+        {
+          "locale": "en",
+          "value": "whole milk"
+        },
+        {
+          "locale": "zh",
+          "value": "牛奶"
+        },
+        {
+          "locale": "zh",
+          "value": "全脂奶"
+        }
+      ],
+      "facets": {
+        "dairyFat": "REGULAR"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Milk, cow, fluid, regular fat (~3.5%)"
+      }
+    },
+    {
+      "publicFoodKey": "F005614",
+      "shortNameEn": "Cow milk, reduced fat (~1%)",
+      "shortNameZh": "低脂牛奶",
+      "conceptKey": "milk",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "milk"
+        },
+        {
+          "locale": "en",
+          "value": "cow milk"
+        },
+        {
+          "locale": "en",
+          "value": "reduced fat milk"
+        },
+        {
+          "locale": "zh",
+          "value": "牛奶"
+        },
+        {
+          "locale": "zh",
+          "value": "低脂奶"
+        }
+      ],
+      "facets": {
+        "dairyFat": "REDUCED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Milk, cow, fluid, reduced fat (~1%)"
+      }
+    },
+    {
+      "publicFoodKey": "F005637",
+      "shortNameEn": "Cow milk, skim (~0.1%)",
+      "shortNameZh": "脱脂牛奶",
+      "conceptKey": "milk",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "milk"
+        },
+        {
+          "locale": "en",
+          "value": "cow milk"
+        },
+        {
+          "locale": "en",
+          "value": "skim milk"
+        },
+        {
+          "locale": "zh",
+          "value": "牛奶"
+        },
+        {
+          "locale": "zh",
+          "value": "脱脂奶"
+        }
+      ],
+      "facets": {
+        "dairyFat": "SKIM"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Milk, cow, fluid, skim (~0.1% fat)"
+      }
+    },
+    {
+      "publicFoodKey": "F008717",
+      "shortNameEn": "Soy beverage, regular fat, unspecified fortification",
+      "shortNameZh": null,
+      "conceptKey": "milk-alternative",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "soy milk"
+        },
+        {
+          "locale": "en",
+          "value": "soya milk"
+        },
+        {
+          "locale": "zh",
+          "value": "豆奶"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Soy beverage, regular fat (~3%), not further defined"
+      }
+    },
+    {
+      "publicFoodKey": "F009824",
+      "shortNameEn": "Almond beverage, no added sugar, unfortified",
+      "shortNameZh": null,
+      "conceptKey": "milk-alternative",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "almond milk"
+        },
+        {
+          "locale": "zh",
+          "value": "杏仁奶"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Almond beverage, no added sugar, unfortified"
+      }
+    },
+    {
+      "publicFoodKey": "F006132",
+      "shortNameEn": "Oat beverage, unfortified",
+      "shortNameZh": "未强化燕麦奶",
+      "conceptKey": "milk-alternative",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "oat milk"
+        },
+        {
+          "locale": "zh",
+          "value": "燕麦奶"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Oat beverage, unfortified"
+      }
+    },
+    {
+      "publicFoodKey": "F009655",
+      "shortNameEn": "Natural Greek-style yoghurt (~10% fat)",
+      "shortNameZh": "原味希腊式酸奶",
+      "conceptKey": "yoghurt",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "yoghurt"
+        },
+        {
+          "locale": "en",
+          "value": "yogurt"
+        },
+        {
+          "locale": "en",
+          "value": "greek yoghurt"
+        },
+        {
+          "locale": "zh",
+          "value": "酸奶"
+        },
+        {
+          "locale": "zh",
+          "value": "希腊酸奶"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Yoghurt, natural, greek style (~10% fat)"
+      }
+    },
+    {
+      "publicFoodKey": "F009688",
+      "shortNameEn": "Natural low-fat yoghurt (<0.5%)",
+      "shortNameZh": "原味低脂酸奶",
+      "conceptKey": "yoghurt",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "yoghurt"
+        },
+        {
+          "locale": "en",
+          "value": "yogurt"
+        },
+        {
+          "locale": "en",
+          "value": "low fat yoghurt"
+        },
+        {
+          "locale": "zh",
+          "value": "酸奶"
+        },
+        {
+          "locale": "zh",
+          "value": "低脂酸奶"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Yoghurt, natural, low fat (<0.5%)"
+      }
+    },
+    {
+      "publicFoodKey": "F002414",
+      "shortNameEn": "Natural cheddar, plain",
+      "shortNameZh": "原味天然切达奶酪",
+      "conceptKey": "cheese",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "cheese"
+        },
+        {
+          "locale": "en",
+          "value": "cheddar"
+        },
+        {
+          "locale": "zh",
+          "value": "奶酪"
+        },
+        {
+          "locale": "zh",
+          "value": "切达奶酪"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Cheese, cheddar, natural, plain"
+      }
+    },
+    {
+      "publicFoodKey": "F002413",
+      "shortNameEn": "Natural cheddar, reduced fat",
+      "shortNameZh": "低脂天然切达奶酪",
+      "conceptKey": "cheese",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "cheese"
+        },
+        {
+          "locale": "en",
+          "value": "cheddar"
+        },
+        {
+          "locale": "zh",
+          "value": "奶酪"
+        },
+        {
+          "locale": "zh",
+          "value": "切达奶酪"
+        }
+      ],
+      "facets": {
+        "dairyFat": "REDUCED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Cheese, cheddar, natural, reduced fat"
+      }
+    },
+    {
+      "publicFoodKey": "F006143",
+      "shortNameEn": "Rolled oats, uncooked",
+      "shortNameZh": "未煮燕麦片",
+      "conceptKey": "oats",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "oats"
+        },
+        {
+          "locale": "en",
+          "value": "rolled oats"
+        },
+        {
+          "locale": "zh",
+          "value": "燕麦"
+        },
+        {
+          "locale": "zh",
+          "value": "燕麦片"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Oats, rolled, uncooked"
+      }
+    },
+    {
+      "publicFoodKey": "F001463",
+      "shortNameEn": "White bread, commercial",
+      "shortNameZh": "市售白面包",
+      "conceptKey": "bread",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "bread"
+        },
+        {
+          "locale": "en",
+          "value": "white bread"
+        },
+        {
+          "locale": "zh",
+          "value": "面包"
+        },
+        {
+          "locale": "zh",
+          "value": "白面包"
+        }
+      ],
+      "facets": {
+        "type": "WHITE"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Bread, white, commercial"
+      }
+    },
+    {
+      "publicFoodKey": "F001553",
+      "shortNameEn": "Wholemeal bread, commercial",
+      "shortNameZh": "市售全麦面包",
+      "conceptKey": "bread",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "bread"
+        },
+        {
+          "locale": "en",
+          "value": "wholemeal bread"
+        },
+        {
+          "locale": "zh",
+          "value": "面包"
+        },
+        {
+          "locale": "zh",
+          "value": "全麦面包"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Bread, wholemeal, commercial"
+      }
+    },
+    {
+      "publicFoodKey": "F000091",
+      "shortNameEn": "Fuji apple, unpeeled, raw",
+      "shortNameZh": "生富士苹果（带皮）",
+      "conceptKey": "fruit",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "apple"
+        },
+        {
+          "locale": "en",
+          "value": "fuji apple"
+        },
+        {
+          "locale": "zh",
+          "value": "苹果"
+        },
+        {
+          "locale": "zh",
+          "value": "富士苹果"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Apple, fuji, unpeeled, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F000262",
+      "shortNameEn": "Cavendish banana, peeled, raw",
+      "shortNameZh": "生香蕉（去皮）",
+      "conceptKey": "fruit",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "banana"
+        },
+        {
+          "locale": "zh",
+          "value": "香蕉"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Banana, cavendish, peeled, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F001905",
+      "shortNameEn": "Broccoli, fresh or frozen, raw",
+      "shortNameZh": "生西兰花",
+      "conceptKey": "vegetable",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "broccoli"
+        },
+        {
+          "locale": "zh",
+          "value": "西兰花"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Broccoli, fresh or frozen, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F001900",
+      "shortNameEn": "Fresh broccoli, boiled, microwaved or steamed, drained",
+      "shortNameZh": null,
+      "conceptKey": "vegetable",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "broccoli"
+        },
+        {
+          "locale": "zh",
+          "value": "西兰花"
+        }
+      ],
+      "facets": {
+        "state": "COOKED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Broccoli, fresh, boiled, microwaved or steamed, drained"
+      }
+    },
+    {
+      "publicFoodKey": "F002276",
+      "shortNameEn": "Carrot, raw",
+      "shortNameZh": "生胡萝卜",
+      "conceptKey": "vegetable",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "carrot"
+        },
+        {
+          "locale": "zh",
+          "value": "胡萝卜"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Carrot, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F002275",
+      "shortNameEn": "Carrot, boiled, microwaved or steamed, drained",
+      "shortNameZh": null,
+      "conceptKey": "vegetable",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "carrot"
+        },
+        {
+          "locale": "zh",
+          "value": "胡萝卜"
+        }
+      ],
+      "facets": {
+        "state": "COOKED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Carrot, boiled, microwaved or steamed, drained"
+      }
+    },
+    {
+      "publicFoodKey": "F009176",
+      "shortNameEn": "Firm tofu, as purchased",
+      "shortNameZh": "硬豆腐（购入状态）",
+      "conceptKey": "tofu",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "tofu"
+        },
+        {
+          "locale": "en",
+          "value": "firm tofu"
+        },
+        {
+          "locale": "zh",
+          "value": "豆腐"
+        },
+        {
+          "locale": "zh",
+          "value": "硬豆腐"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Tofu (soy bean curd), firm, as purchased"
+      }
+    },
+    {
+      "publicFoodKey": "F009183",
+      "shortNameEn": "Soft or silken tofu, as purchased",
+      "shortNameZh": "嫩豆腐（购入状态）",
+      "conceptKey": "tofu",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "tofu"
+        },
+        {
+          "locale": "en",
+          "value": "silken tofu"
+        },
+        {
+          "locale": "en",
+          "value": "soft tofu"
+        },
+        {
+          "locale": "zh",
+          "value": "豆腐"
+        },
+        {
+          "locale": "zh",
+          "value": "嫩豆腐"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Tofu (soy bean curd), silken or soft, as purchased"
+      }
+    },
+    {
+      "publicFoodKey": "F000448",
+      "shortNameEn": "Red kidney beans, canned and drained",
+      "shortNameZh": "罐装红腰豆（沥干）",
+      "conceptKey": "legume",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "kidney beans"
+        },
+        {
+          "locale": "en",
+          "value": "red kidney beans"
+        },
+        {
+          "locale": "zh",
+          "value": "红腰豆"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Bean, red kidney, canned, drained"
+      }
+    },
+    {
+      "publicFoodKey": "F002880",
+      "shortNameEn": "Chickpeas, canned and drained",
+      "shortNameZh": "罐装鹰嘴豆（沥干）",
+      "conceptKey": "legume",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "chickpeas"
+        },
+        {
+          "locale": "en",
+          "value": "chickpea"
+        },
+        {
+          "locale": "zh",
+          "value": "鹰嘴豆"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Chickpea, canned, drained"
+      }
+    },
+    {
+      "publicFoodKey": "F007353",
+      "shortNameEn": "Peeled potato, boiled, microwaved or steamed, drained",
+      "shortNameZh": null,
+      "conceptKey": "potato",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "potato"
+        },
+        {
+          "locale": "zh",
+          "value": "土豆"
+        }
+      ],
+      "facets": {
+        "state": "COOKED"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Potato, peeled, boiled, microwaved or steamed, drained"
+      }
+    },
+    {
+      "publicFoodKey": "F007356",
+      "shortNameEn": "Peeled potato, raw",
+      "shortNameZh": "生土豆（去皮）",
+      "conceptKey": "potato",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "potato"
+        },
+        {
+          "locale": "zh",
+          "value": "土豆"
+        }
+      ],
+      "facets": {
+        "state": "RAW"
+      },
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Potato, peeled, raw"
+      }
+    },
+    {
+      "publicFoodKey": "F006159",
+      "shortNameEn": "Canola oil",
+      "shortNameZh": "菜籽油",
+      "conceptKey": "oil",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "oil"
+        },
+        {
+          "locale": "en",
+          "value": "canola oil"
+        },
+        {
+          "locale": "zh",
+          "value": "食用油"
+        },
+        {
+          "locale": "zh",
+          "value": "菜籽油"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Oil, canola"
+      }
+    },
+    {
+      "publicFoodKey": "F006177",
+      "shortNameEn": "Olive oil",
+      "shortNameZh": "橄榄油",
+      "conceptKey": "oil",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "oil"
+        },
+        {
+          "locale": "en",
+          "value": "olive oil"
+        },
+        {
+          "locale": "zh",
+          "value": "食用油"
+        },
+        {
+          "locale": "zh",
+          "value": "橄榄油"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Oil, olive"
+      }
+    },
+    {
+      "publicFoodKey": "F003017",
+      "shortNameEn": "Black instant coffee",
+      "shortNameZh": "速溶黑咖啡",
+      "conceptKey": "coffee",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "coffee"
+        },
+        {
+          "locale": "en",
+          "value": "black coffee"
+        },
+        {
+          "locale": "en",
+          "value": "instant coffee"
+        },
+        {
+          "locale": "zh",
+          "value": "咖啡"
+        },
+        {
+          "locale": "zh",
+          "value": "黑咖啡"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Coffee, black, from instant coffee powder"
+      }
+    },
+    {
+      "publicFoodKey": "F003041",
+      "shortNameEn": "Espresso coffee",
+      "shortNameZh": "浓缩咖啡",
+      "conceptKey": "coffee",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "coffee"
+        },
+        {
+          "locale": "en",
+          "value": "espresso"
+        },
+        {
+          "locale": "zh",
+          "value": "咖啡"
+        },
+        {
+          "locale": "zh",
+          "value": "浓缩咖啡"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Coffee, espresso"
+      }
+    },
+    {
+      "publicFoodKey": "F003045",
+      "shortNameEn": "Flat white, cappuccino or latte, single shot, cow milk",
+      "shortNameZh": null,
+      "conceptKey": "coffee",
+      "aliases": [
+        {
+          "locale": "en",
+          "value": "coffee"
+        },
+        {
+          "locale": "en",
+          "value": "latte"
+        },
+        {
+          "locale": "en",
+          "value": "cappuccino"
+        },
+        {
+          "locale": "en",
+          "value": "flat white"
+        },
+        {
+          "locale": "zh",
+          "value": "咖啡"
+        },
+        {
+          "locale": "zh",
+          "value": "拿铁"
+        },
+        {
+          "locale": "zh",
+          "value": "奶咖"
+        }
+      ],
+      "facets": {},
+      "commonRank": 20,
+      "reviewStatus": "REVIEWED",
+      "evidence": {
+        "field": "officialName",
+        "text": "Coffee, flat white/cappuccino/latte, single shot & cow's milk"
+      }
+    }
+  ]
+}

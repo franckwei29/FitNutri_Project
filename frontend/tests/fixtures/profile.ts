@@ -1,0 +1,3 @@
+import type { CurrentUser, ProfileResponse } from '../../src/api/contracts'
+export const user:CurrentUser={id:'9007199254740993',email:'synthetic@example.test',displayName:'Synthetic',role:'USER',enabled:true,version:0}
+export function profile(overrides:Partial<ProfileResponse>={}):ProfileResponse {return {profileVersion:null,user,birthYear:null,adultConfirmed:false,sex:null,heightCm:null,activityLevel:null,goalType:null,dailyTargetKj:null,energyUnit:'KJ',healthSafetyAnswer:null,qaConsentGranted:false,qaEligibility:{eligible:false,reason:'Complete the safety question.'},onboardingCompleted:false,currentWeight:null,healthSafetyUpdatedAt:null,qaConsentUpdatedAt:null,updatedAt:null,...overrides}}

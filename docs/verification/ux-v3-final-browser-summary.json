@@ -1,0 +1,203 @@
+{
+  "stack": "Real installed Chrome155.0.8059.80 / React-Vite15173 / Spring18080 / PostgreSQL16.15-V13; no business route fulfillment",
+  "workers": 1,
+  "stats": {
+    "startTime": "2026-10-17T15:13:02.078Z",
+    "duration": 467828.115,
+    "expected": 27,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "file": "advanced-contract.spec.ts",
+      "title": "unconfigured helpers fail closed while real manual recording stays available without record writes",
+      "status": "passed",
+      "durationMs": 9510,
+      "retry": 0
+    },
+    {
+      "file": "core-flow.spec.ts",
+      "title": "M1 real register-to-dashboard flow preserves cancellation, snapshots and missing energy",
+      "status": "passed",
+      "durationMs": 29396,
+      "retry": 0
+    },
+    {
+      "file": "dish-entry-v3.spec.ts",
+      "title": "TUX dish: exact one-third recipe plus independent single saves five leaves as two roots;reuse clears all quantities",
+      "status": "passed",
+      "durationMs": 17357,
+      "retry": 0
+    },
+    {
+      "file": "dish-entry-v3.spec.ts",
+      "title": "TUX dish: real PERSONAL input remains its own saved portion meaning",
+      "status": "passed",
+      "durationMs": 13440,
+      "retry": 0
+    },
+    {
+      "file": "dish-entry-v3.spec.ts",
+      "title": "TUX dish: real PERCENT input remains its own saved portion meaning",
+      "status": "passed",
+      "durationMs": 13784,
+      "retry": 0
+    },
+    {
+      "file": "dish-entry-v3.spec.ts",
+      "title": "TUX dish: real SERVINGS input remains its own saved portion meaning",
+      "status": "passed",
+      "durationMs": 15140,
+      "retry": 0
+    },
+    {
+      "file": "exercise-entry-v3.spec.ts",
+      "title": "TUX Quick: Basketball records outside Gym with no dated weight and keeps unavailable energy distinct from zero",
+      "status": "passed",
+      "durationMs": 10924,
+      "retry": 0
+    },
+    {
+      "file": "exercise-entry-v3.spec.ts",
+      "title": "TUX Quick equipment: blank details save;invalid optional speed blocks;zero incline survives and details never alter MET energy",
+      "status": "passed",
+      "durationMs": 12446,
+      "retry": 0
+    },
+    {
+      "file": "food-entry-v3.spec.ts",
+      "title": "TUX food: real two-meal local Add,zero-write Review,one atomic confirmation and owned root correction",
+      "status": "passed",
+      "durationMs": 13681,
+      "retry": 0
+    },
+    {
+      "file": "grouped-summary.spec.ts",
+      "title": "TUX conservation: independent SQL leaf sums equal summaries and roots across portion/date correction and whole deletion",
+      "status": "passed",
+      "durationMs": 25672,
+      "retry": 0
+    },
+    {
+      "file": "legacy-regression-v3.spec.ts",
+      "title": "TUX118/119: real USER and ADMIN sessions cannot access another owner groups,preview,mutation or proof",
+      "status": "passed",
+      "durationMs": 27765,
+      "retry": 0
+    },
+    {
+      "file": "legacy-regression-v3.spec.ts",
+      "title": "TUX116/129: V1 creation/replay/correction retain minimal immutable proof alongside V2 records",
+      "status": "passed",
+      "durationMs": 14105,
+      "retry": 0
+    },
+    {
+      "file": "profile-admin.spec.ts",
+      "title": "T-PROFILE-04/T-WEIGHT-01/02: null targets, unit changes and dated weights preserve saved records",
+      "status": "passed",
+      "durationMs": 21378,
+      "retry": 0
+    },
+    {
+      "file": "profile-admin.spec.ts",
+      "title": "T-ADMIN-02: separate administrator session disables and restores access without changing private data",
+      "status": "passed",
+      "durationMs": 22507,
+      "retry": 0
+    },
+    {
+      "file": "record-management.spec.ts",
+      "title": "T-EDIT-03: independent real sessions cannot silently overwrite the same food version",
+      "status": "passed",
+      "durationMs": 21386,
+      "retry": 0
+    },
+    {
+      "file": "record-management.spec.ts",
+      "title": "T-EDIT-02/T-DELETE-01: dated activity correction and confirmed deletion preserve original proofs",
+      "status": "passed",
+      "durationMs": 22701,
+      "retry": 0
+    },
+    {
+      "file": "record-management.spec.ts",
+      "title": "T-AUTH-07: switching accounts cannot expose the previous owner record",
+      "status": "passed",
+      "durationMs": 18595,
+      "retry": 0
+    },
+    {
+      "file": "refresh-manual-history.spec.ts",
+      "title": "TUX111: hard reload discards a complex unsubmitted recipe without persistence or writes",
+      "status": "passed",
+      "durationMs": 16869,
+      "retry": 0
+    },
+    {
+      "file": "refresh-manual-history.spec.ts",
+      "title": "TUX112: reload during a real pending save forgets identity; manual History sees its later commit",
+      "status": "passed",
+      "durationMs": 15598,
+      "retry": 0
+    },
+    {
+      "file": "save-unknown-v3.spec.ts",
+      "title": "TUX106: real post-commit response loss recovers by GET without another POST",
+      "status": "passed",
+      "durationMs": 11368,
+      "retry": 0
+    },
+    {
+      "file": "save-unknown-v3.spec.ts",
+      "title": "TUX108: real receipt404 while the original transaction waits retains its only identity",
+      "status": "passed",
+      "durationMs": 25925,
+      "retry": 0
+    },
+    {
+      "file": "submission-recovery.spec.ts",
+      "title": "T-IDEM-04: real committed lost response recovers the original two-food receipt once",
+      "status": "passed",
+      "durationMs": 11065,
+      "retry": 0
+    },
+    {
+      "file": "submission-recovery.spec.ts",
+      "title": "T-IDEM-05: receipt 404 while original POST waits never creates another batch",
+      "status": "passed",
+      "durationMs": 26792,
+      "retry": 0
+    },
+    {
+      "file": "ux-accessibility-v3.spec.ts",
+      "title": "TUX007/013: mobile multiline consent remains associated,first-line aligned and keyboard operable",
+      "status": "passed",
+      "durationMs": 5935,
+      "retry": 0
+    },
+    {
+      "file": "ux-accessibility-v3.spec.ts",
+      "title": "TUX008/009/010/012/013: actual graph order,axes,table,units and bounded saved notice",
+      "status": "passed",
+      "durationMs": 21219,
+      "retry": 0
+    },
+    {
+      "file": "ux-accessibility-v3.spec.ts",
+      "title": "TUX004: real successful registration notice disappears within three seconds without disturbing login fields",
+      "status": "passed",
+      "durationMs": 5634,
+      "retry": 0
+    },
+    {
+      "file": "workout-entry-v3.spec.ts",
+      "title": "TUX Gym: one50minute strength period plus20minute unavailable cardio,optional movement details,whole-root correction/reuse/delete",
+      "status": "passed",
+      "durationMs": 16555,
+      "retry": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+import {useQuery} from '@tanstack/react-query'
+import type {EntrySource,FoodPreviewV2Request,FoodRootPreviewV2,FoodRootV2} from '../api/contracts'
+import type {FoodRootDraft} from '../features/entry/draftTypes'
+import {foodRootInput} from '../features/food/foodInputsV2'
+import {previewFoodV2,previewFoodCorrectionV2} from '../api/foodEntriesV2'
+import type {CatalogueScope} from './useFoodSearch'
+import {DEFAULT_ZONE,isValidLocalDate,todayInZone} from '../domain/dates'
+export interface FoodRootCorrectionContext {kind:'single'|'dish';recordId:string;expectedVersion:number;original:FoodRootV2}
+export interface RootPreviewState{signature:string;preview:FoodRootPreviewV2|null}
+/** Names and meal labels do not affect nutrition. Batch review separately binds the complete current input. */
+export function foodRootCalculationSignature(root:FoodRootDraft,scope:CatalogueScope,date:string,source:EntrySource){return JSON.stringify([scope.ownerId,scope.epoch,scope.catalogueRevision,date,source,root.entryKind,root.clientEntryId,root.entryKind==='SINGLE'?[root.referenceId,root.quantityGramsInput]:[root.inputMode,root.portion,root.ingredients.map(i=>[i.clientEntryId,i.referenceId,i.quantityGramsInput])]])}
+export function useFoodRootPreview(root:FoodRootDraft,scope:CatalogueScope,recordDate:string,source:EntrySource,wholeRecipe=false,enabled=true,correction?:FoodRootCorrectionContext){let input:FoodPreviewV2Request|null=null;try{const value=root.entryKind==='DISH'&&wholeRecipe?{...root,inputMode:'PERSONAL' as const,portion:{kind:'PERSONAL' as const}}:root;input={recordDate,zone:DEFAULT_ZONE,source,entries:[foodRootInput(value,correction?.original)]}}catch{/* Incomplete inputs never request an authoritative preview. */}
+ const signature=foodRootCalculationSignature(wholeRecipe&&root.entryKind==='DISH'?{...root,inputMode:'PERSONAL',portion:{kind:'PERSONAL'}}:root,scope,recordDate,source),valid=enabled&&(!wholeRecipe||root.entryKind==='DISH'&&root.inputMode==='FULL_RECIPE')&&!!input&&isValidLocalDate(recordDate)&&recordDate<=todayInZone();const query=useQuery({queryKey:['owner',scope.ownerId,scope.epoch,'food-root-preview',wholeRecipe,correction?.kind??null,correction?.recordId??null,correction?.expectedVersion??null,signature],queryFn:({signal})=>correction?previewFoodCorrectionV2(correction.kind,correction.recordId,{expectedVersion:correction.expectedVersion,recordDate,zone:DEFAULT_ZONE,entry:input!.entries[0]},signal):previewFoodV2(input!,signal),enabled:valid,retry:false});return {...query,signature,data:valid?query.data:undefined,ready:valid&&query.isSuccess&&!query.isFetching,root:valid&&query.isSuccess&&!query.isFetching?query.data.entries[0]:null}}

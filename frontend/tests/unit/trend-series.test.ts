@@ -1,0 +1,7 @@
+import {describe,expect,it} from 'vitest'
+import {buildTrendSeries} from '../../src/domain/trendSeries'
+import {daySummary,metric} from '../fixtures/summary'
+describe('F15 canonical chart projection',()=>{
+ it('keeps 100, null and true zero distinct and never invents exercise estimates or weights',()=>{const days=['2020-01-01','2020-01-02','2020-01-03'].map(d=>daySummary(d).day);days[0].intake=metric({knownSum:100,recordCount:1,knownValueCount:1,hasData:true});days[2].intake=metric({knownSum:0,recordCount:1,knownValueCount:1,hasData:true});days[1].exerciseCount=1;days[1].activityMinutes=10;days[1].expenditure=metric({hasData:true,recordCount:1,missingValueCount:1});const series=buildTrendSeries(days,'KJ',[{id:'1',recordDate:'2020-01-02',weightKg:71.5,version:2}]);expect(series.map(d=>d.intake)).toEqual([100,null,0]);expect(series.map(d=>d.expenditure)).toEqual([null,null,null]);expect(series.map(d=>d.weightKg)).toEqual([null,71.5,null]);expect(series.map(d=>d.recordDate)).toEqual(days.map(d=>d.recordDate))})
+ it('converts display energy only, without changing the canonical server numbers',()=>{const day=daySummary('2020-01-01').day;day.intake=metric({knownSum:418.4,hasData:true,recordCount:1,knownValueCount:1});day.expenditure=metric({knownSum:0,hasData:true,recordCount:1,knownValueCount:1});const point=buildTrendSeries([day],'KCAL',[])[0];expect(point.intake).toBeCloseTo(100,10);expect(point).toMatchObject({expenditure:0,weightKg:null});expect(day.intake.knownSum).toBe(418.4)})
+})

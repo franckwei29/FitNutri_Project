@@ -1,0 +1,13 @@
+# B07 — one authoritative food portion calculation
+
+Branch develop/yuankang-wei. BC-08; existing V3/V4 snapshot schema only, no migration or shared/runtime DB changes. Independent review/UAT PENDING.
+
+FoodCalculationService accepts exact BigDecimal grams >0 through10000, at most three significant decimal places. For each of four complete core nutrients: per100g × grams ÷100, followed by one HALF_UP scale3 rounding. It rejects missing, negative, overprecision, unverified or inactive new references with422 UNSUPPORTED_REFERENCE; no null-to-zero or double intermediary. A separate documented historical-original method permits inactive verified original references only after the future owning correction service verifies ownership/reference equality. Outputs beyond numeric(12,3) snapshot capacity are rejected before persistence.
+
+FoodNutritionResponse now matches the canonical reference/quantityGrams/nutrients/calculationFingerprint envelope. Both immutable-ID and legacy public-key nutrition paths delegate the same calculator. Fingerprints use SHA256 length-framed canonical decimals, immutable reference/dataset/content SHA and formula version; no label, display unit, time or mutable activation state. Clients treat them as opaque review evidence.
+
+Tests written in this package: FoodCalculationServiceTest8 verifies100g/150g, fractional portions, exact rounding tie, real zero, bounds/precision/null/unverified/active rules, owner-gated historical calculation, deterministic fingerprints and snapshot overflow. FoodPreviewControllerTest4 verifies both paths/string IDs/envelopes, malformed/missing inputs, unsupported selection and404. Added real PostgreSQL detached-reference preview case; extended OfficialFoodCatalogueIT with actual rice150g ->988.500kJ and4.650g protein.
+
+Initial unit12 PASS. First full run:150 Surefire PASS; OfficialFoodCatalogueIT failed500 when nutrition used a detached reference's lazy dataset. Fixed repository by-id with EntityGraph(dataset), so immutable reference and provenance are read together; the new detached-preview PG test covers that exact boundary. No error suppression or weakened assertion. Final full command and outcome below.
+
+Final actual command: `TEST_DB_ADMIN_URL=jdbc:postgresql://127.0.0.1:55432/fitnutri_integration_baseline TEST_DB_USERNAME=fitnutri_test TEST_DB_PASSWORD=test_only TEST_DB_DOCKER_CONTAINER=fitnutri-integration-20261016 ./backend/mvnw -o -f backend/pom.xml verify`. `/tmp/fitnutri-b07-final.log`: **Surefire151 + Failsafe3 PASS**, zero failures/errors/skips, including full official source import and real nutrition endpoint. Next dependent creation service B09 must call this exact calculator; no reviewed save is claimed yet.
